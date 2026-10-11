@@ -4,6 +4,71 @@ ClosureOps is a human-in-the-loop facility weather operating decision-support pr
 
 ClosureOps includes a FastAPI backend and a React + TypeScript + Vite command center. All facility data is synthetic demo data.
 
+## Live Demo — Akamai Cloud
+
+ClosureOps is deployed on an Akamai Cloud (Linode) Ubuntu server using Docker Compose.
+
+**Live Application:** https://172-239-53-200.sslip.io
+
+The public demonstration provides read-only access to the Command Center, synthetic facility information, real nationwide NWS alerts, saved evidence, and historical audit records.
+
+**Security:** Public manager-write operations and AI inference are disabled. The full human-approval and AWS Strands/Akamai briefing workflows have been verified separately in the local development environment.
+
+## Quick Start — Docker
+
+### Requirements
+
+- Docker Engine or Docker Desktop with Linux containers
+- Docker Compose
+
+### Build and run
+
+From the repository root:
+
+```powershell
+docker compose config --quiet
+docker compose build
+docker compose up -d --wait
+docker compose ps
+```
+
+Open the local containerized application:
+
+**http://127.0.0.1:8080**
+
+The deployment includes:
+
+- **Frontend:** React, TypeScript, Vite production build, and Nginx
+- **Backend:** Python 3.12, FastAPI, and AWS Strands Agents SDK dependencies
+- **Database:** SQLite stored in a persistent Docker volume
+- **Networking:** Same-origin `/api` proxy over a private Docker network
+- **Weather data:** Public NWS integration and OpenFreeMap
+
+### Stop containers
+
+```powershell
+docker compose down
+```
+
+This preserves the named SQLite volume. Do not use `docker compose down --volumes` if you want to retain demo records.
+
+### Security
+
+Docker runs in read-only demonstration mode by default:
+
+```text
+CLOSUREOPS_LOCAL_DEMO_WRITES=false
+CLOSUREOPS_AI_BRIEFING_ENABLED=false
+```
+
+Manager approvals, overrides, notification creation, and authenticated inference are not publicly available.
+
+No API credentials are included in Docker images.
+
+### Additional documentation
+
+See [Docker Deployment Guide](docs/docker-deployment.md) for dependencies, architecture, security boundaries, verification, and deployment instructions.
+
 ## Requirements
 
 - Windows PowerShell
@@ -24,7 +89,7 @@ python -m uvicorn backend.app.main:app --reload --host 127.0.0.1 --port 8001 --n
 ```
 
 The read-only Command Center API will be available at `http://127.0.0.1:8001`.
-Task 9A write operations are disabled by default. For the complete synthetic
+write operations are disabled by default. For the complete synthetic
 workflow use the exact startup command in [the local API guide](docs/local-demo-api.md).
 
 Useful endpoints:
@@ -62,7 +127,7 @@ startup, security boundaries and limitations. Manager actions require the
 backend's local-demo write flag; read-only mode remains supported.
 Alerts also offers [a read-only nationwide NWS demonstration](docs/live-nws-demonstration.md)
 through Refresh Live NWS, clearly separated from historical synthetic facility evidence.
-Task 10B adds an explicit Generate AI Briefing action for exactly reproducible
+adds an explicit Generate AI Briefing action for exactly reproducible
 saved demo evaluations. Inference is disabled by default; see the
 [private briefing startup and verification guide](docs/browser-ai-briefing.md).
 
@@ -74,7 +139,7 @@ VITE_API_BASE_URL=http://127.0.0.1:8001
 
 Do not put credentials or secrets in frontend environment variables.
 
-## First Strands facility tool (Task 4A)
+## First Strands facility tool 
 
 The read-only `get_facility` tool uses a separate in-memory synthetic dataset
 with ID `jefferson-research`. The existing API dataset is unchanged. Its fixed
