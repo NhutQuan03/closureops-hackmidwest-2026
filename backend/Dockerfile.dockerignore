@@ -1,0 +1,15 @@
+**
+!backend/
+!backend/Dockerfile
+!backend/__init__.py
+!backend/requirements-docker.lock
+!backend/app/
+!backend/app/decision/
+!backend/app/services/
+!backend/app/**/*.py
+!scripts/
+!scripts/test_akamai_strands.py
+!scripts/test_akamai_decision_tool.py
+!scripts/usgs_diagnostics.py
+!scripts/init_docker_demo.py
+# Python bytecode, tests, data, virtualenvs and credential files remain excluded.

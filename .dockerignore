@@ -1,0 +1,26 @@
+# Default defensive context policy; image-specific files further allowlist inputs.
+.git
+.venv
+.aws
+.codex
+.agents
+.idea
+**/node_modules
+**/.env
+**/.env.*
+**/*.pem
+**/*.key
+**/credentials.json
+**/*secret*
+**/*token*
+**/__pycache__
+**/*.pyc
+**/.pytest_cache
+**/dist
+**/*.tsbuildinfo
+**/test-results
+**/playwright-report
+**/*.sqlite*
+**/*.db*
+backend/data
+artifacts

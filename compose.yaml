@@ -1,0 +1,53 @@
+name: closureops-docker-demo
+services:
+  frontend:
+    image: closureops-frontend:task11a
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    ports:
+      - "127.0.0.1:8080:8080"
+    depends_on:
+      backend:
+        condition: service_healthy
+    networks: [application]
+    restart: unless-stopped
+    init: true
+    read_only: true
+    tmpfs: ["/tmp:rw,noexec,nosuid,size=64m"]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+
+  backend:
+    image: closureops-backend:task11a
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      CLOSUREOPS_ENVIRONMENT: container_readonly
+      CLOSUREOPS_BIND_HOST: 0.0.0.0
+      CLOSUREOPS_LOCAL_DEMO_WRITES: "false"
+      CLOSUREOPS_AI_BRIEFING_ENABLED: "false"
+      CLOSUREOPS_CONTAINER_NETWORK: ${CLOSUREOPS_DOCKER_SUBNET:-172.30.11.0/24}
+      CLOSUREOPS_DEMO_DATABASE: /var/lib/closureops/docker-demo.sqlite3
+      NWS_USER_AGENT: ClosureOps/0.1 (read-only local Docker demonstration)
+    volumes:
+      - audit:/var/lib/closureops
+    networks: [application]
+    restart: unless-stopped
+    init: true
+    read_only: true
+    tmpfs: ["/tmp:rw,noexec,nosuid,size=32m"]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    # No backend host port and no credentials, env_file, or build secrets.
+
+networks:
+  application:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: ${CLOSUREOPS_DOCKER_SUBNET:-172.30.11.0/24}
+    # Dedicated private bridge; outbound HTTPS stays available for public NWS.
+volumes:
+  audit:

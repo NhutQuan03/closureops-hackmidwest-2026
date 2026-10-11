@@ -1,0 +1,1798 @@
+{
+  "health": {
+    "status": "ok",
+    "service": "closureops-api",
+    "data_mode": "synthetic_demo",
+    "local_demo_writes_enabled": true
+  },
+  "facilities": [
+    {
+      "id": "jefferson-research",
+      "name": "Jefferson Research Facility",
+      "city": "Columbia",
+      "state": "MO",
+      "country": "US",
+      "timezone": "America/Chicago",
+      "coordinates": {
+        "latitude": 38.9517,
+        "longitude": -92.3341
+      },
+      "operating_status": "open",
+      "operating_status_scope": "Initial synthetic catalog status; use decision history for finalized synthetic postures.",
+      "data_mode": "synthetic_demo",
+      "data_label": "SIMULATED DEMO",
+      "source": "ClosureOps synthetic facility fixture",
+      "source_timestamp": "2026-10-10T18:00:00Z",
+      "decision_authority": "Human approval/override records synthetic decisions only; no real facility status changes.",
+      "current_note": "SIMULATED DEMO: invented Jefferson access-route exposure and USGS-00000000 gauge; not its regional live USGS association.",
+      "last_reviewed_at": "2026-10-10T18:00:00Z"
+    }
+  ],
+  "scenarios": [
+    {
+      "scenario_id": "normal",
+      "facility_id": "jefferson-research",
+      "data_label": "SIMULATED DEMO",
+      "disclosure": "SIMULATED DEMO: invented Jefferson access-route exposure and USGS-00000000 gauge; not its regional live USGS association.",
+      "source": "ClosureOps trusted synthetic scenario fixture",
+      "source_timestamp": "2026-10-10T18:00:00Z",
+      "evaluation_clock": "2026-10-10T18:00:00Z",
+      "expected_recommendation": "OPEN",
+      "expected_status": "RECOMMENDATION_READY"
+    },
+    {
+      "scenario_id": "delayed_arrival",
+      "facility_id": "jefferson-research",
+      "data_label": "SIMULATED DEMO",
+      "disclosure": "SIMULATED DEMO: invented Jefferson access-route exposure and USGS-00000000 gauge; not its regional live USGS association.",
+      "source": "ClosureOps trusted synthetic scenario fixture",
+      "source_timestamp": "2026-10-10T18:00:00Z",
+      "evaluation_clock": "2026-10-10T18:00:00Z",
+      "expected_recommendation": "DELAYED_ARRIVAL",
+      "expected_status": "RECOMMENDATION_READY"
+    },
+    {
+      "scenario_id": "unscheduled_telework",
+      "facility_id": "jefferson-research",
+      "data_label": "SIMULATED DEMO",
+      "disclosure": "SIMULATED DEMO: invented Jefferson access-route exposure and USGS-00000000 gauge; not its regional live USGS association.",
+      "source": "ClosureOps trusted synthetic scenario fixture",
+      "source_timestamp": "2026-10-10T18:00:00Z",
+      "evaluation_clock": "2026-10-10T18:00:00Z",
+      "expected_recommendation": "UNSCHEDULED_TELEWORK",
+      "expected_status": "RECOMMENDATION_READY"
+    },
+    {
+      "scenario_id": "severe_applicable_flood",
+      "facility_id": "jefferson-research",
+      "data_label": "SIMULATED DEMO",
+      "disclosure": "SIMULATED DEMO: invented Jefferson access-route exposure and USGS-00000000 gauge; not its regional live USGS association.",
+      "source": "ClosureOps trusted synthetic scenario fixture",
+      "source_timestamp": "2026-10-10T18:00:00Z",
+      "evaluation_clock": "2026-10-10T18:00:00Z",
+      "expected_recommendation": "FACILITY_CLOSURE",
+      "expected_status": "RECOMMENDATION_READY"
+    },
+    {
+      "scenario_id": "missing_evidence",
+      "facility_id": "jefferson-research",
+      "data_label": "SIMULATED DEMO",
+      "disclosure": "SIMULATED DEMO: invented Jefferson access-route exposure and USGS-00000000 gauge; not its regional live USGS association.",
+      "source": "ClosureOps trusted synthetic scenario fixture",
+      "source_timestamp": "2026-10-10T18:00:00Z",
+      "evaluation_clock": "2026-10-10T18:00:00Z",
+      "expected_recommendation": null,
+      "expected_status": "REVIEW_REQUIRED"
+    },
+    {
+      "scenario_id": "stale_evidence",
+      "facility_id": "jefferson-research",
+      "data_label": "SIMULATED DEMO",
+      "disclosure": "SIMULATED DEMO: invented Jefferson access-route exposure and USGS-00000000 gauge; not its regional live USGS association.",
+      "source": "ClosureOps trusted synthetic scenario fixture",
+      "source_timestamp": "2026-10-10T18:00:00Z",
+      "evaluation_clock": "2026-10-10T21:00:00Z",
+      "expected_recommendation": null,
+      "expected_status": "REVIEW_REQUIRED"
+    },
+    {
+      "scenario_id": "conflicting_evidence",
+      "facility_id": "jefferson-research",
+      "data_label": "SIMULATED DEMO",
+      "disclosure": "SIMULATED DEMO: invented Jefferson access-route exposure and USGS-00000000 gauge; not its regional live USGS association.",
+      "source": "ClosureOps trusted synthetic scenario fixture",
+      "source_timestamp": "2026-10-10T18:00:00Z",
+      "evaluation_clock": "2026-10-10T18:00:00Z",
+      "expected_recommendation": null,
+      "expected_status": "REVIEW_REQUIRED"
+    }
+  ],
+  "evaluations": {
+    "normal": {
+      "evaluation_id": "eval_3a921104bb4e4d4e9d326669bdea8a48",
+      "data_mode": "SIMULATED DEMO",
+      "evidence_snapshot": {
+        "facility": {
+          "id": "jefferson-research",
+          "name": "Jefferson Research Facility",
+          "latitude": 38.9517,
+          "longitude": -92.3341,
+          "data_source": "SIMULATED DEMO",
+          "source_timestamp": "2026-10-10T18:00:00Z",
+          "source_reference": "demo:jefferson-research/facility"
+        },
+        "nws": {
+          "facility_id": "jefferson-research",
+          "source": "NWS",
+          "source_reference": "demo:nws-point-collection",
+          "evidence_status": "SIMULATED DEMO",
+          "collection_status": "NO_ACTIVE_ALERTS",
+          "retrieved_at": "2026-10-10T18:00:00Z",
+          "geographic_scope": "FACILITY_POINT_FILTERED",
+          "query_latitude": 38.9517,
+          "query_longitude": -92.3341,
+          "alerts": []
+        },
+        "usgs": {
+          "facility_id": "jefferson-research",
+          "source": "USGS",
+          "observations": [
+            {
+              "monitoring_location_id": "USGS-00000000",
+              "time_series_id": "demo-height",
+              "parameter_code": "00065",
+              "value": 2.0,
+              "unit": "ft",
+              "observation_timestamp": "2026-10-10T18:00:00Z",
+              "retrieved_at": "2026-10-10T18:00:00Z",
+              "evidence_status": "SIMULATED DEMO",
+              "source_reference": "demo:usgs-height",
+              "approval_status": "Provisional"
+            }
+          ],
+          "trend": {
+            "monitoring_location_id": "USGS-00000000",
+            "time_series_id": "demo-height",
+            "start_value_feet": 2.0,
+            "end_value_feet": 2.0,
+            "start_timestamp": "2026-10-10T16:00:00Z",
+            "end_timestamp": "2026-10-10T18:00:00Z",
+            "retrieved_at": "2026-10-10T18:00:00Z",
+            "evidence_status": "SIMULATED DEMO",
+            "source_reference": "demo:usgs-trend"
+          }
+        },
+        "exposure": {
+          "facility_id": "jefferson-research",
+          "monitoring_location_id": "USGS-00000000",
+          "relationship": "ACCESS_ROUTE",
+          "basis": "SIMULATED DEMO only: invented Jefferson access-route exposure and gauge; not the configured regional USGS association.",
+          "source_reference": "demo:jefferson-research/invented-exposure",
+          "source_timestamp": "2026-10-10T18:00:00Z",
+          "data_source": "SIMULATED DEMO",
+          "thresholds": {
+            "delayed_arrival_feet": 4.0,
+            "telework_feet": 6.0,
+            "closure_feet": 8.0
+          }
+        },
+        "rules": {
+          "version": "prototype-flood-v1",
+          "policy_label": "PROTOTYPE - NOT OFFICIAL USDA POLICY",
+          "nws_max_age_minutes": 15,
+          "usgs_max_age_minutes": 120,
+          "rising_change_feet": 1.0
+        },
+        "evaluated_at": "2026-10-10T18:00:00Z"
+      },
+      "result": {
+        "facility_id": "jefferson-research",
+        "recommendation": "OPEN",
+        "evaluation_status": "RECOMMENDATION_READY",
+        "evidence_sufficiency": "SUFFICIENT",
+        "data_label": "SIMULATED DEMO",
+        "evaluated_at": "2026-10-10T18:00:00Z",
+        "rules": {
+          "version": "prototype-flood-v1",
+          "policy_label": "PROTOTYPE - NOT OFFICIAL USDA POLICY",
+          "nws_max_age_minutes": 15,
+          "usgs_max_age_minutes": 120,
+          "rising_change_feet": 1.0
+        },
+        "thresholds": {
+          "delayed_arrival_feet": 4.0,
+          "telework_feet": 6.0,
+          "closure_feet": 8.0
+        },
+        "triggered_rules": [
+          {
+            "rule_id": "PROTOTYPE_OPEN_SUPPORTED",
+            "reason": "Fresh applicable NWS collection has no active alerts; documented exposure, stage 2 ft below 4 ft, and endpoint change 0 ft below 1 ft support OPEN for this flood-only prototype.",
+            "evidence_reference_ids": [
+              "nws",
+              "exposure",
+              "usgs:observation:0",
+              "usgs:trend"
+            ]
+          }
+        ],
+        "evidence_references": [
+          {
+            "reference_id": "facility",
+            "source": "FACILITY",
+            "source_reference": "demo:jefferson-research/facility",
+            "state": "SIMULATED DEMO",
+            "observed_at": "2026-10-10T18:00:00Z",
+            "retrieved_at": null,
+            "valid_from": null,
+            "valid_until": null
+          },
+          {
+            "reference_id": "exposure",
+            "source": "EXPOSURE",
+            "source_reference": "demo:jefferson-research/invented-exposure",
+            "state": "SIMULATED DEMO",
+            "observed_at": "2026-10-10T18:00:00Z",
+            "retrieved_at": null,
+            "valid_from": null,
+            "valid_until": null
+          },
+          {
+            "reference_id": "nws",
+            "source": "NWS",
+            "source_reference": "demo:nws-point-collection",
+            "state": "SIMULATED DEMO",
+            "observed_at": null,
+            "retrieved_at": "2026-10-10T18:00:00Z",
+            "valid_from": null,
+            "valid_until": null
+          },
+          {
+            "reference_id": "usgs:observation:0",
+            "source": "USGS",
+            "source_reference": "demo:usgs-height",
+            "state": "SIMULATED DEMO",
+            "observed_at": "2026-10-10T18:00:00Z",
+            "retrieved_at": "2026-10-10T18:00:00Z",
+            "valid_from": null,
+            "valid_until": null
+          },
+          {
+            "reference_id": "usgs:trend",
+            "source": "USGS",
+            "source_reference": "demo:usgs-trend",
+            "state": "SIMULATED DEMO",
+            "observed_at": "2026-10-10T18:00:00Z",
+            "retrieved_at": "2026-10-10T18:00:00Z",
+            "valid_from": "2026-10-10T16:00:00Z",
+            "valid_until": "2026-10-10T18:00:00Z"
+          }
+        ],
+        "reasons": [
+          "Fresh applicable NWS collection has no active alerts; documented exposure, stage 2 ft below 4 ft, and endpoint change 0 ft below 1 ft support OPEN for this flood-only prototype."
+        ],
+        "limitations": [
+          "PROTOTYPE rules and site triggers are not official USDA policy or official USGS flood stages.",
+          "Only configured flood exposure is evaluated; an OPEN recommendation is not a general safety finding.",
+          "NWS point filtering establishes alert applicability to configured coordinates, not observed inundation.",
+          "Gauge stage and endpoint trend support configured exposure assumptions; they do not prove flooding.",
+          "Discharge is retained as a reference when supplied but does not select posture in prototype-flood-v1.",
+          "Every recommendation requires explicit human approval; this engine changes no facility status.",
+          "SIMULATED DEMO: synthetic configuration or evidence is present; this is not a live facility decision."
+        ],
+        "human_approval_required": true
+      },
+      "source_timestamps": [
+        {
+          "reference_id": "facility",
+          "source": "FACILITY",
+          "source_reference": "demo:jefferson-research/facility",
+          "state": "SIMULATED DEMO",
+          "observed_at": "2026-10-10T18:00:00Z",
+          "retrieved_at": null,
+          "valid_from": null,
+          "valid_until": null
+        },
+        {
+          "reference_id": "exposure",
+          "source": "EXPOSURE",
+          "source_reference": "demo:jefferson-research/invented-exposure",
+          "state": "SIMULATED DEMO",
+          "observed_at": "2026-10-10T18:00:00Z",
+          "retrieved_at": null,
+          "valid_from": null,
+          "valid_until": null
+        },
+        {
+          "reference_id": "nws",
+          "source": "NWS",
+          "source_reference": "demo:nws-point-collection",
+          "state": "SIMULATED DEMO",
+          "observed_at": null,
+          "retrieved_at": "2026-10-10T18:00:00Z",
+          "valid_from": null,
+          "valid_until": null
+        },
+        {
+          "reference_id": "usgs:observation:0",
+          "source": "USGS",
+          "source_reference": "demo:usgs-height",
+          "state": "SIMULATED DEMO",
+          "observed_at": "2026-10-10T18:00:00Z",
+          "retrieved_at": "2026-10-10T18:00:00Z",
+          "valid_from": null,
+          "valid_until": null
+        },
+        {
+          "reference_id": "usgs:trend",
+          "source": "USGS",
+          "source_reference": "demo:usgs-trend",
+          "state": "SIMULATED DEMO",
+          "observed_at": "2026-10-10T18:00:00Z",
+          "retrieved_at": "2026-10-10T18:00:00Z",
+          "valid_from": "2026-10-10T16:00:00Z",
+          "valid_until": "2026-10-10T18:00:00Z"
+        }
+      ],
+      "source_checks": [],
+      "integration_limitations": [
+        "SIMULATED DEMO: fixed fixture clock and invented exposure, gauge and triggers."
+      ]
+    },
+    "severe_applicable_flood": {
+      "evaluation_id": "eval_e28cab8108be4740a8d4aa44bdf1b542",
+      "data_mode": "SIMULATED DEMO",
+      "evidence_snapshot": {
+        "facility": {
+          "id": "jefferson-research",
+          "name": "Jefferson Research Facility",
+          "latitude": 38.9517,
+          "longitude": -92.3341,
+          "data_source": "SIMULATED DEMO",
+          "source_timestamp": "2026-10-10T18:00:00Z",
+          "source_reference": "demo:jefferson-research/facility"
+        },
+        "nws": {
+          "facility_id": "jefferson-research",
+          "source": "NWS",
+          "source_reference": "demo:nws-point-collection",
+          "evidence_status": "SIMULATED DEMO",
+          "collection_status": "ACTIVE_ALERTS",
+          "retrieved_at": "2026-10-10T18:00:00Z",
+          "geographic_scope": "FACILITY_POINT_FILTERED",
+          "query_latitude": 38.9517,
+          "query_longitude": -92.3341,
+          "alerts": [
+            {
+              "alert_id": "demo:nws-severe-warning",
+              "event": "Flash Flood Warning",
+              "severity": "Severe",
+              "urgency": "Immediate",
+              "certainty": "Observed",
+              "effective": "2026-10-10T17:30:00Z",
+              "expires": "2026-10-10T20:00:00Z"
+            }
+          ]
+        },
+        "usgs": {
+          "facility_id": "jefferson-research",
+          "source": "USGS",
+          "observations": [
+            {
+              "monitoring_location_id": "USGS-00000000",
+              "time_series_id": "demo-height",
+              "parameter_code": "00065",
+              "value": 7.0,
+              "unit": "ft",
+              "observation_timestamp": "2026-10-10T18:00:00Z",
+              "retrieved_at": "2026-10-10T18:00:00Z",
+              "evidence_status": "SIMULATED DEMO",
+              "source_reference": "demo:usgs-height",
+              "approval_status": "Provisional"
+            }
+          ],
+          "trend": {
+            "monitoring_location_id": "USGS-00000000",
+            "time_series_id": "demo-height",
+            "start_value_feet": 5.0,
+            "end_value_feet": 7.0,
+            "start_timestamp": "2026-10-10T16:00:00Z",
+            "end_timestamp": "2026-10-10T18:00:00Z",
+            "retrieved_at": "2026-10-10T18:00:00Z",
+            "evidence_status": "SIMULATED DEMO",
+            "source_reference": "demo:usgs-trend"
+          }
+        },
+        "exposure": {
+          "facility_id": "jefferson-research",
+          "monitoring_location_id": "USGS-00000000",
+          "relationship": "ACCESS_ROUTE",
+          "basis": "SIMULATED DEMO only: invented Jefferson access-route exposure and gauge; not the configured regional USGS association.",
+          "source_reference": "demo:jefferson-research/invented-exposure",
+          "source_timestamp": "2026-10-10T18:00:00Z",
+          "data_source": "SIMULATED DEMO",
+          "thresholds": {
+            "delayed_arrival_feet": 4.0,
+            "telework_feet": 6.0,
+            "closure_feet": 8.0
+          }
+        },
+        "rules": {
+          "version": "prototype-flood-v1",
+          "policy_label": "PROTOTYPE - NOT OFFICIAL USDA POLICY",
+          "nws_max_age_minutes": 15,
+          "usgs_max_age_minutes": 120,
+          "rising_change_feet": 1.0
+        },
+        "evaluated_at": "2026-10-10T18:00:00Z"
+      },
+      "result": {
+        "facility_id": "jefferson-research",
+        "recommendation": "FACILITY_CLOSURE",
+        "evaluation_status": "RECOMMENDATION_READY",
+        "evidence_sufficiency": "SUFFICIENT",
+        "data_label": "SIMULATED DEMO",
+        "evaluated_at": "2026-10-10T18:00:00Z",
+        "rules": {
+          "version": "prototype-flood-v1",
+          "policy_label": "PROTOTYPE - NOT OFFICIAL USDA POLICY",
+          "nws_max_age_minutes": 15,
+          "usgs_max_age_minutes": 120,
+          "rising_change_feet": 1.0
+        },
+        "thresholds": {
+          "delayed_arrival_feet": 4.0,
+          "telework_feet": 6.0,
+          "closure_feet": 8.0
+        },
+        "triggered_rules": [
+          {
+            "rule_id": "PROTOTYPE_CLOSURE_WARNING_AND_STAGE",
+            "reason": "Applicable severe flood warning plus associated gage height 7 ft at/above the prototype telework trigger 6 ft supports conservative closure.",
+            "evidence_reference_ids": [
+              "nws:alert:0",
+              "exposure",
+              "usgs:observation:0",
+              "usgs:trend"
+            ]
+          }
+        ],
+        "evidence_references": [
+          {
+            "reference_id": "facility",
+            "source": "FACILITY",
+            "source_reference": "demo:jefferson-research/facility",
+            "state": "SIMULATED DEMO",
+            "observed_at": "2026-10-10T18:00:00Z",
+            "retrieved_at": null,
+            "valid_from": null,
+            "valid_until": null
+          },
+          {
+            "reference_id": "exposure",
+            "source": "EXPOSURE",
+            "source_reference": "demo:jefferson-research/invented-exposure",
+            "state": "SIMULATED DEMO",
+            "observed_at": "2026-10-10T18:00:00Z",
+            "retrieved_at": null,
+            "valid_from": null,
+            "valid_until": null
+          },
+          {
+            "reference_id": "nws",
+            "source": "NWS",
+            "source_reference": "demo:nws-point-collection",
+            "state": "SIMULATED DEMO",
+            "observed_at": null,
+            "retrieved_at": "2026-10-10T18:00:00Z",
+            "valid_from": null,
+            "valid_until": null
+          },
+          {
+            "reference_id": "nws:alert:0",
+            "source": "NWS",
+            "source_reference": "demo:nws-severe-warning",
+            "state": "SIMULATED DEMO",
+            "observed_at": null,
+            "retrieved_at": "2026-10-10T18:00:00Z",
+            "valid_from": "2026-10-10T17:30:00Z",
+            "valid_until": "2026-10-10T20:00:00Z"
+          },
+          {
+            "reference_id": "usgs:observation:0",
+            "source": "USGS",
+            "source_reference": "demo:usgs-height",
+            "state": "SIMULATED DEMO",
+            "observed_at": "2026-10-10T18:00:00Z",
+            "retrieved_at": "2026-10-10T18:00:00Z",
+            "valid_from": null,
+            "valid_until": null
+          },
+          {
+            "reference_id": "usgs:trend",
+            "source": "USGS",
+            "source_reference": "demo:usgs-trend",
+            "state": "SIMULATED DEMO",
+            "observed_at": "2026-10-10T18:00:00Z",
+            "retrieved_at": "2026-10-10T18:00:00Z",
+            "valid_from": "2026-10-10T16:00:00Z",
+            "valid_until": "2026-10-10T18:00:00Z"
+          }
+        ],
+        "reasons": [
+          "Applicable severe flood warning plus associated gage height 7 ft at/above the prototype telework trigger 6 ft supports conservative closure."
+        ],
+        "limitations": [
+          "PROTOTYPE rules and site triggers are not official USDA policy or official USGS flood stages.",
+          "Only configured flood exposure is evaluated; an OPEN recommendation is not a general safety finding.",
+          "NWS point filtering establishes alert applicability to configured coordinates, not observed inundation.",
+          "Gauge stage and endpoint trend support configured exposure assumptions; they do not prove flooding.",
+          "Discharge is retained as a reference when supplied but does not select posture in prototype-flood-v1.",
+          "Every recommendation requires explicit human approval; this engine changes no facility status.",
+          "SIMULATED DEMO: synthetic configuration or evidence is present; this is not a live facility decision."
+        ],
+        "human_approval_required": true
+      },
+      "source_timestamps": [
+        {
+          "reference_id": "facility",
+          "source": "FACILITY",
+          "source_reference": "demo:jefferson-research/facility",
+          "state": "SIMULATED DEMO",
+          "observed_at": "2026-10-10T18:00:00Z",
+          "retrieved_at": null,
+          "valid_from": null,
+          "valid_until": null
+        },
+        {
+          "reference_id": "exposure",
+          "source": "EXPOSURE",
+          "source_reference": "demo:jefferson-research/invented-exposure",
+          "state": "SIMULATED DEMO",
+          "observed_at": "2026-10-10T18:00:00Z",
+          "retrieved_at": null,
+          "valid_from": null,
+          "valid_until": null
+        },
+        {
+          "reference_id": "nws",
+          "source": "NWS",
+          "source_reference": "demo:nws-point-collection",
+          "state": "SIMULATED DEMO",
+          "observed_at": null,
+          "retrieved_at": "2026-10-10T18:00:00Z",
+          "valid_from": null,
+          "valid_until": null
+        },
+        {
+          "reference_id": "nws:alert:0",
+          "source": "NWS",
+          "source_reference": "demo:nws-severe-warning",
+          "state": "SIMULATED DEMO",
+          "observed_at": null,
+          "retrieved_at": "2026-10-10T18:00:00Z",
+          "valid_from": "2026-10-10T17:30:00Z",
+          "valid_until": "2026-10-10T20:00:00Z"
+        },
+        {
+          "reference_id": "usgs:observation:0",
+          "source": "USGS",
+          "source_reference": "demo:usgs-height",
+          "state": "SIMULATED DEMO",
+          "observed_at": "2026-10-10T18:00:00Z",
+          "retrieved_at": "2026-10-10T18:00:00Z",
+          "valid_from": null,
+          "valid_until": null
+        },
+        {
+          "reference_id": "usgs:trend",
+          "source": "USGS",
+          "source_reference": "demo:usgs-trend",
+          "state": "SIMULATED DEMO",
+          "observed_at": "2026-10-10T18:00:00Z",
+          "retrieved_at": "2026-10-10T18:00:00Z",
+          "valid_from": "2026-10-10T16:00:00Z",
+          "valid_until": "2026-10-10T18:00:00Z"
+        }
+      ],
+      "source_checks": [],
+      "integration_limitations": [
+        "SIMULATED DEMO: fixed fixture clock and invented exposure, gauge and triggers."
+      ]
+    },
+    "missing_evidence": {
+      "evaluation_id": "eval_bf9ee1ec93c74227b7a2bc65ce89e0b8",
+      "data_mode": "SIMULATED DEMO",
+      "evidence_snapshot": {
+        "facility": {
+          "id": "jefferson-research",
+          "name": "Jefferson Research Facility",
+          "latitude": 38.9517,
+          "longitude": -92.3341,
+          "data_source": "SIMULATED DEMO",
+          "source_timestamp": "2026-10-10T18:00:00Z",
+          "source_reference": "demo:jefferson-research/facility"
+        },
+        "nws": {
+          "facility_id": "jefferson-research",
+          "source": "NWS",
+          "source_reference": "demo:nws-point-collection",
+          "evidence_status": "SIMULATED DEMO",
+          "collection_status": "NO_ACTIVE_ALERTS",
+          "retrieved_at": "2026-10-10T18:00:00Z",
+          "geographic_scope": "FACILITY_POINT_FILTERED",
+          "query_latitude": 38.9517,
+          "query_longitude": -92.3341,
+          "alerts": []
+        },
+        "usgs": null,
+        "exposure": {
+          "facility_id": "jefferson-research",
+          "monitoring_location_id": "USGS-00000000",
+          "relationship": "ACCESS_ROUTE",
+          "basis": "SIMULATED DEMO only: invented Jefferson access-route exposure and gauge; not the configured regional USGS association.",
+          "source_reference": "demo:jefferson-research/invented-exposure",
+          "source_timestamp": "2026-10-10T18:00:00Z",
+          "data_source": "SIMULATED DEMO",
+          "thresholds": {
+            "delayed_arrival_feet": 4.0,
+            "telework_feet": 6.0,
+            "closure_feet": 8.0
+          }
+        },
+        "rules": {
+          "version": "prototype-flood-v1",
+          "policy_label": "PROTOTYPE - NOT OFFICIAL USDA POLICY",
+          "nws_max_age_minutes": 15,
+          "usgs_max_age_minutes": 120,
+          "rising_change_feet": 1.0
+        },
+        "evaluated_at": "2026-10-10T18:00:00Z"
+      },
+      "result": {
+        "facility_id": "jefferson-research",
+        "recommendation": null,
+        "evaluation_status": "REVIEW_REQUIRED",
+        "evidence_sufficiency": "INSUFFICIENT",
+        "data_label": "SIMULATED DEMO",
+        "evaluated_at": "2026-10-10T18:00:00Z",
+        "rules": {
+          "version": "prototype-flood-v1",
+          "policy_label": "PROTOTYPE - NOT OFFICIAL USDA POLICY",
+          "nws_max_age_minutes": 15,
+          "usgs_max_age_minutes": 120,
+          "rising_change_feet": 1.0
+        },
+        "thresholds": {
+          "delayed_arrival_feet": 4.0,
+          "telework_feet": 6.0,
+          "closure_feet": 8.0
+        },
+        "triggered_rules": [
+          {
+            "rule_id": "REVIEW_USGS_MISSING",
+            "reason": "USGS evidence is missing.",
+            "evidence_reference_ids": [
+              "usgs"
+            ]
+          },
+          {
+            "rule_id": "REVIEW_GAGE_MISSING_OR_AMBIGUOUS",
+            "reason": "Exactly one usable gage-height series is required.",
+            "evidence_reference_ids": [
+              "exposure",
+              "usgs:trend"
+            ]
+          },
+          {
+            "rule_id": "REVIEW_TREND_MISSING",
+            "reason": "A validated one-to-three-hour observed gage-height trend is required.",
+            "evidence_reference_ids": [
+              "usgs:trend"
+            ]
+          }
+        ],
+        "evidence_references": [
+          {
+            "reference_id": "facility",
+            "source": "FACILITY",
+            "source_reference": "demo:jefferson-research/facility",
+            "state": "SIMULATED DEMO",
+            "observed_at": "2026-10-10T18:00:00Z",
+            "retrieved_at": null,
+            "valid_from": null,
+            "valid_until": null
+          },
+          {
+            "reference_id": "exposure",
+            "source": "EXPOSURE",
+            "source_reference": "demo:jefferson-research/invented-exposure",
+            "state": "SIMULATED DEMO",
+            "observed_at": "2026-10-10T18:00:00Z",
+            "retrieved_at": null,
+            "valid_from": null,
+            "valid_until": null
+          },
+          {
+            "reference_id": "nws",
+            "source": "NWS",
+            "source_reference": "demo:nws-point-collection",
+            "state": "SIMULATED DEMO",
+            "observed_at": null,
+            "retrieved_at": "2026-10-10T18:00:00Z",
+            "valid_from": null,
+            "valid_until": null
+          },
+          {
+            "reference_id": "usgs",
+            "source": "USGS",
+            "source_reference": "input:usgs-missing",
+            "state": "UNAVAILABLE",
+            "observed_at": null,
+            "retrieved_at": null,
+            "valid_from": null,
+            "valid_until": null
+          },
+          {
+            "reference_id": "usgs:trend",
+            "source": "USGS",
+            "source_reference": "input:usgs-trend-missing",
+            "state": "UNAVAILABLE",
+            "observed_at": null,
+            "retrieved_at": null,
+            "valid_from": null,
+            "valid_until": null
+          }
+        ],
+        "reasons": [
+          "USGS evidence is missing.",
+          "Exactly one usable gage-height series is required.",
+          "A validated one-to-three-hour observed gage-height trend is required."
+        ],
+        "limitations": [
+          "PROTOTYPE rules and site triggers are not official USDA policy or official USGS flood stages.",
+          "Only configured flood exposure is evaluated; an OPEN recommendation is not a general safety finding.",
+          "NWS point filtering establishes alert applicability to configured coordinates, not observed inundation.",
+          "Gauge stage and endpoint trend support configured exposure assumptions; they do not prove flooding.",
+          "Discharge is retained as a reference when supplied but does not select posture in prototype-flood-v1.",
+          "Every recommendation requires explicit human approval; this engine changes no facility status.",
+          "SIMULATED DEMO: synthetic configuration or evidence is present; this is not a live facility decision."
+        ],
+        "human_approval_required": true
+      },
+      "source_timestamps": [
+        {
+          "reference_id": "facility",
+          "source": "FACILITY",
+          "source_reference": "demo:jefferson-research/facility",
+          "state": "SIMULATED DEMO",
+          "observed_at": "2026-10-10T18:00:00Z",
+          "retrieved_at": null,
+          "valid_from": null,
+          "valid_until": null
+        },
+        {
+          "reference_id": "exposure",
+          "source": "EXPOSURE",
+          "source_reference": "demo:jefferson-research/invented-exposure",
+          "state": "SIMULATED DEMO",
+          "observed_at": "2026-10-10T18:00:00Z",
+          "retrieved_at": null,
+          "valid_from": null,
+          "valid_until": null
+        },
+        {
+          "reference_id": "nws",
+          "source": "NWS",
+          "source_reference": "demo:nws-point-collection",
+          "state": "SIMULATED DEMO",
+          "observed_at": null,
+          "retrieved_at": "2026-10-10T18:00:00Z",
+          "valid_from": null,
+          "valid_until": null
+        },
+        {
+          "reference_id": "usgs",
+          "source": "USGS",
+          "source_reference": "input:usgs-missing",
+          "state": "UNAVAILABLE",
+          "observed_at": null,
+          "retrieved_at": null,
+          "valid_from": null,
+          "valid_until": null
+        },
+        {
+          "reference_id": "usgs:trend",
+          "source": "USGS",
+          "source_reference": "input:usgs-trend-missing",
+          "state": "UNAVAILABLE",
+          "observed_at": null,
+          "retrieved_at": null,
+          "valid_from": null,
+          "valid_until": null
+        }
+      ],
+      "source_checks": [],
+      "integration_limitations": [
+        "SIMULATED DEMO: fixed fixture clock and invented exposure, gauge and triggers."
+      ]
+    },
+    "stale_evidence": {
+      "evaluation_id": "eval_0fccf54e52cc4adca0864e26c43a0f9f",
+      "data_mode": "SIMULATED DEMO",
+      "evidence_snapshot": {
+        "facility": {
+          "id": "jefferson-research",
+          "name": "Jefferson Research Facility",
+          "latitude": 38.9517,
+          "longitude": -92.3341,
+          "data_source": "SIMULATED DEMO",
+          "source_timestamp": "2026-10-10T18:00:00Z",
+          "source_reference": "demo:jefferson-research/facility"
+        },
+        "nws": {
+          "facility_id": "jefferson-research",
+          "source": "NWS",
+          "source_reference": "demo:nws-point-collection",
+          "evidence_status": "SIMULATED DEMO",
+          "collection_status": "NO_ACTIVE_ALERTS",
+          "retrieved_at": "2026-10-10T18:00:00Z",
+          "geographic_scope": "FACILITY_POINT_FILTERED",
+          "query_latitude": 38.9517,
+          "query_longitude": -92.3341,
+          "alerts": []
+        },
+        "usgs": {
+          "facility_id": "jefferson-research",
+          "source": "USGS",
+          "observations": [
+            {
+              "monitoring_location_id": "USGS-00000000",
+              "time_series_id": "demo-height",
+              "parameter_code": "00065",
+              "value": 2.0,
+              "unit": "ft",
+              "observation_timestamp": "2026-10-10T18:00:00Z",
+              "retrieved_at": "2026-10-10T18:00:00Z",
+              "evidence_status": "SIMULATED DEMO",
+              "source_reference": "demo:usgs-height",
+              "approval_status": "Provisional"
+            }
+          ],
+          "trend": {
+            "monitoring_location_id": "USGS-00000000",
+            "time_series_id": "demo-height",
+            "start_value_feet": 2.0,
+            "end_value_feet": 2.0,
+            "start_timestamp": "2026-10-10T16:00:00Z",
+            "end_timestamp": "2026-10-10T18:00:00Z",
+            "retrieved_at": "2026-10-10T18:00:00Z",
+            "evidence_status": "SIMULATED DEMO",
+            "source_reference": "demo:usgs-trend"
+          }
+        },
+        "exposure": {
+          "facility_id": "jefferson-research",
+          "monitoring_location_id": "USGS-00000000",
+          "relationship": "ACCESS_ROUTE",
+          "basis": "SIMULATED DEMO only: invented Jefferson access-route exposure and gauge; not the configured regional USGS association.",
+          "source_reference": "demo:jefferson-research/invented-exposure",
+          "source_timestamp": "2026-10-10T18:00:00Z",
+          "data_source": "SIMULATED DEMO",
+          "thresholds": {
+            "delayed_arrival_feet": 4.0,
+            "telework_feet": 6.0,
+            "closure_feet": 8.0
+          }
+        },
+        "rules": {
+          "version": "prototype-flood-v1",
+          "policy_label": "PROTOTYPE - NOT OFFICIAL USDA POLICY",
+          "nws_max_age_minutes": 15,
+          "usgs_max_age_minutes": 120,
+          "rising_change_feet": 1.0
+        },
+        "evaluated_at": "2026-10-10T21:00:00Z"
+      },
+      "result": {
+        "facility_id": "jefferson-research",
+        "recommendation": null,
+        "evaluation_status": "REVIEW_REQUIRED",
+        "evidence_sufficiency": "INSUFFICIENT",
+        "data_label": "SIMULATED DEMO",
+        "evaluated_at": "2026-10-10T21:00:00Z",
+        "rules": {
+          "version": "prototype-flood-v1",
+          "policy_label": "PROTOTYPE - NOT OFFICIAL USDA POLICY",
+          "nws_max_age_minutes": 15,
+          "usgs_max_age_minutes": 120,
+          "rising_change_feet": 1.0
+        },
+        "thresholds": {
+          "delayed_arrival_feet": 4.0,
+          "telework_feet": 6.0,
+          "closure_feet": 8.0
+        },
+        "triggered_rules": [
+          {
+            "rule_id": "REVIEW_NWS_FRESHNESS",
+            "reason": "NWS evidence is unavailable, explicitly stale, future-dated, or older than the prototype retrieval window.",
+            "evidence_reference_ids": [
+              "nws"
+            ]
+          },
+          {
+            "rule_id": "REVIEW_GAGE_FRESHNESS",
+            "reason": "Gage height is unavailable, explicitly stale, future-dated, or older than the prototype observation window.",
+            "evidence_reference_ids": [
+              "usgs:observation:0"
+            ]
+          },
+          {
+            "rule_id": "REVIEW_TREND_FRESHNESS",
+            "reason": "The trend endpoint or retrieval is unavailable, stale, or future-dated.",
+            "evidence_reference_ids": [
+              "usgs:trend"
+            ]
+          }
+        ],
+        "evidence_references": [
+          {
+            "reference_id": "facility",
+            "source": "FACILITY",
+            "source_reference": "demo:jefferson-research/facility",
+            "state": "SIMULATED DEMO",
+            "observed_at": "2026-10-10T18:00:00Z",
+            "retrieved_at": null,
+            "valid_from": null,
+            "valid_until": null
+          },
+          {
+            "reference_id": "exposure",
+            "source": "EXPOSURE",
+            "source_reference": "demo:jefferson-research/invented-exposure",
+            "state": "SIMULATED DEMO",
+            "observed_at": "2026-10-10T18:00:00Z",
+            "retrieved_at": null,
+            "valid_from": null,
+            "valid_until": null
+          },
+          {
+            "reference_id": "nws",
+            "source": "NWS",
+            "source_reference": "demo:nws-point-collection",
+            "state": "SIMULATED DEMO",
+            "observed_at": null,
+            "retrieved_at": "2026-10-10T18:00:00Z",
+            "valid_from": null,
+            "valid_until": null
+          },
+          {
+            "reference_id": "usgs:observation:0",
+            "source": "USGS",
+            "source_reference": "demo:usgs-height",
+            "state": "SIMULATED DEMO",
+            "observed_at": "2026-10-10T18:00:00Z",
+            "retrieved_at": "2026-10-10T18:00:00Z",
+            "valid_from": null,
+            "valid_until": null
+          },
+          {
+            "reference_id": "usgs:trend",
+            "source": "USGS",
+            "source_reference": "demo:usgs-trend",
+            "state": "SIMULATED DEMO",
+            "observed_at": "2026-10-10T18:00:00Z",
+            "retrieved_at": "2026-10-10T18:00:00Z",
+            "valid_from": "2026-10-10T16:00:00Z",
+            "valid_until": "2026-10-10T18:00:00Z"
+          }
+        ],
+        "reasons": [
+          "NWS evidence is unavailable, explicitly stale, future-dated, or older than the prototype retrieval window.",
+          "Gage height is unavailable, explicitly stale, future-dated, or older than the prototype observation window.",
+          "The trend endpoint or retrieval is unavailable, stale, or future-dated."
+        ],
+        "limitations": [
+          "PROTOTYPE rules and site triggers are not official USDA policy or official USGS flood stages.",
+          "Only configured flood exposure is evaluated; an OPEN recommendation is not a general safety finding.",
+          "NWS point filtering establishes alert applicability to configured coordinates, not observed inundation.",
+          "Gauge stage and endpoint trend support configured exposure assumptions; they do not prove flooding.",
+          "Discharge is retained as a reference when supplied but does not select posture in prototype-flood-v1.",
+          "Every recommendation requires explicit human approval; this engine changes no facility status.",
+          "SIMULATED DEMO: synthetic configuration or evidence is present; this is not a live facility decision."
+        ],
+        "human_approval_required": true
+      },
+      "source_timestamps": [
+        {
+          "reference_id": "facility",
+          "source": "FACILITY",
+          "source_reference": "demo:jefferson-research/facility",
+          "state": "SIMULATED DEMO",
+          "observed_at": "2026-10-10T18:00:00Z",
+          "retrieved_at": null,
+          "valid_from": null,
+          "valid_until": null
+        },
+        {
+          "reference_id": "exposure",
+          "source": "EXPOSURE",
+          "source_reference": "demo:jefferson-research/invented-exposure",
+          "state": "SIMULATED DEMO",
+          "observed_at": "2026-10-10T18:00:00Z",
+          "retrieved_at": null,
+          "valid_from": null,
+          "valid_until": null
+        },
+        {
+          "reference_id": "nws",
+          "source": "NWS",
+          "source_reference": "demo:nws-point-collection",
+          "state": "SIMULATED DEMO",
+          "observed_at": null,
+          "retrieved_at": "2026-10-10T18:00:00Z",
+          "valid_from": null,
+          "valid_until": null
+        },
+        {
+          "reference_id": "usgs:observation:0",
+          "source": "USGS",
+          "source_reference": "demo:usgs-height",
+          "state": "SIMULATED DEMO",
+          "observed_at": "2026-10-10T18:00:00Z",
+          "retrieved_at": "2026-10-10T18:00:00Z",
+          "valid_from": null,
+          "valid_until": null
+        },
+        {
+          "reference_id": "usgs:trend",
+          "source": "USGS",
+          "source_reference": "demo:usgs-trend",
+          "state": "SIMULATED DEMO",
+          "observed_at": "2026-10-10T18:00:00Z",
+          "retrieved_at": "2026-10-10T18:00:00Z",
+          "valid_from": "2026-10-10T16:00:00Z",
+          "valid_until": "2026-10-10T18:00:00Z"
+        }
+      ],
+      "source_checks": [],
+      "integration_limitations": [
+        "SIMULATED DEMO: fixed fixture clock and invented exposure, gauge and triggers."
+      ]
+    },
+    "conflicting_evidence": {
+      "evaluation_id": "eval_5730d007540f4377b244325cbad46094",
+      "data_mode": "SIMULATED DEMO",
+      "evidence_snapshot": {
+        "facility": {
+          "id": "jefferson-research",
+          "name": "Jefferson Research Facility",
+          "latitude": 38.9517,
+          "longitude": -92.3341,
+          "data_source": "SIMULATED DEMO",
+          "source_timestamp": "2026-10-10T18:00:00Z",
+          "source_reference": "demo:jefferson-research/facility"
+        },
+        "nws": {
+          "facility_id": "jefferson-research",
+          "source": "NWS",
+          "source_reference": "demo:nws-point-collection",
+          "evidence_status": "SIMULATED DEMO",
+          "collection_status": "ACTIVE_ALERTS",
+          "retrieved_at": "2026-10-10T18:00:00Z",
+          "geographic_scope": "FACILITY_POINT_FILTERED",
+          "query_latitude": 38.9517,
+          "query_longitude": -92.3341,
+          "alerts": [
+            {
+              "alert_id": "demo:nws-severe-warning",
+              "event": "Flash Flood Warning",
+              "severity": "Severe",
+              "urgency": "Immediate",
+              "certainty": "Observed",
+              "effective": "2026-10-10T17:30:00Z",
+              "expires": "2026-10-10T20:00:00Z"
+            }
+          ]
+        },
+        "usgs": {
+          "facility_id": "jefferson-research",
+          "source": "USGS",
+          "observations": [
+            {
+              "monitoring_location_id": "USGS-00000000",
+              "time_series_id": "demo-height",
+              "parameter_code": "00065",
+              "value": 2.0,
+              "unit": "ft",
+              "observation_timestamp": "2026-10-10T18:00:00Z",
+              "retrieved_at": "2026-10-10T18:00:00Z",
+              "evidence_status": "SIMULATED DEMO",
+              "source_reference": "demo:usgs-height",
+              "approval_status": "Provisional"
+            }
+          ],
+          "trend": {
+            "monitoring_location_id": "USGS-00000000",
+            "time_series_id": "demo-height",
+            "start_value_feet": 2.0,
+            "end_value_feet": 2.0,
+            "start_timestamp": "2026-10-10T16:00:00Z",
+            "end_timestamp": "2026-10-10T18:00:00Z",
+            "retrieved_at": "2026-10-10T18:00:00Z",
+            "evidence_status": "SIMULATED DEMO",
+            "source_reference": "demo:usgs-trend"
+          }
+        },
+        "exposure": {
+          "facility_id": "jefferson-research",
+          "monitoring_location_id": "USGS-00000000",
+          "relationship": "ACCESS_ROUTE",
+          "basis": "SIMULATED DEMO only: invented Jefferson access-route exposure and gauge; not the configured regional USGS association.",
+          "source_reference": "demo:jefferson-research/invented-exposure",
+          "source_timestamp": "2026-10-10T18:00:00Z",
+          "data_source": "SIMULATED DEMO",
+          "thresholds": {
+            "delayed_arrival_feet": 4.0,
+            "telework_feet": 6.0,
+            "closure_feet": 8.0
+          }
+        },
+        "rules": {
+          "version": "prototype-flood-v1",
+          "policy_label": "PROTOTYPE - NOT OFFICIAL USDA POLICY",
+          "nws_max_age_minutes": 15,
+          "usgs_max_age_minutes": 120,
+          "rising_change_feet": 1.0
+        },
+        "evaluated_at": "2026-10-10T18:00:00Z"
+      },
+      "result": {
+        "facility_id": "jefferson-research",
+        "recommendation": null,
+        "evaluation_status": "REVIEW_REQUIRED",
+        "evidence_sufficiency": "CONFLICTING",
+        "data_label": "SIMULATED DEMO",
+        "evaluated_at": "2026-10-10T18:00:00Z",
+        "rules": {
+          "version": "prototype-flood-v1",
+          "policy_label": "PROTOTYPE - NOT OFFICIAL USDA POLICY",
+          "nws_max_age_minutes": 15,
+          "usgs_max_age_minutes": 120,
+          "rising_change_feet": 1.0
+        },
+        "thresholds": {
+          "delayed_arrival_feet": 4.0,
+          "telework_feet": 6.0,
+          "closure_feet": 8.0
+        },
+        "triggered_rules": [
+          {
+            "rule_id": "REVIEW_CONFLICTING_SIGNALS",
+            "reason": "An applicable severe flood warning conflicts with a below-trigger, non-rising associated gage; neither signal is discarded.",
+            "evidence_reference_ids": [
+              "nws:alert:0",
+              "exposure",
+              "usgs:observation:0",
+              "usgs:trend"
+            ]
+          }
+        ],
+        "evidence_references": [
+          {
+            "reference_id": "facility",
+            "source": "FACILITY",
+            "source_reference": "demo:jefferson-research/facility",
+            "state": "SIMULATED DEMO",
+            "observed_at": "2026-10-10T18:00:00Z",
+            "retrieved_at": null,
+            "valid_from": null,
+            "valid_until": null
+          },
+          {
+            "reference_id": "exposure",
+            "source": "EXPOSURE",
+            "source_reference": "demo:jefferson-research/invented-exposure",
+            "state": "SIMULATED DEMO",
+            "observed_at": "2026-10-10T18:00:00Z",
+            "retrieved_at": null,
+            "valid_from": null,
+            "valid_until": null
+          },
+          {
+            "reference_id": "nws",
+            "source": "NWS",
+            "source_reference": "demo:nws-point-collection",
+            "state": "SIMULATED DEMO",
+            "observed_at": null,
+            "retrieved_at": "2026-10-10T18:00:00Z",
+            "valid_from": null,
+            "valid_until": null
+          },
+          {
+            "reference_id": "nws:alert:0",
+            "source": "NWS",
+            "source_reference": "demo:nws-severe-warning",
+            "state": "SIMULATED DEMO",
+            "observed_at": null,
+            "retrieved_at": "2026-10-10T18:00:00Z",
+            "valid_from": "2026-10-10T17:30:00Z",
+            "valid_until": "2026-10-10T20:00:00Z"
+          },
+          {
+            "reference_id": "usgs:observation:0",
+            "source": "USGS",
+            "source_reference": "demo:usgs-height",
+            "state": "SIMULATED DEMO",
+            "observed_at": "2026-10-10T18:00:00Z",
+            "retrieved_at": "2026-10-10T18:00:00Z",
+            "valid_from": null,
+            "valid_until": null
+          },
+          {
+            "reference_id": "usgs:trend",
+            "source": "USGS",
+            "source_reference": "demo:usgs-trend",
+            "state": "SIMULATED DEMO",
+            "observed_at": "2026-10-10T18:00:00Z",
+            "retrieved_at": "2026-10-10T18:00:00Z",
+            "valid_from": "2026-10-10T16:00:00Z",
+            "valid_until": "2026-10-10T18:00:00Z"
+          }
+        ],
+        "reasons": [
+          "An applicable severe flood warning conflicts with a below-trigger, non-rising associated gage; neither signal is discarded."
+        ],
+        "limitations": [
+          "PROTOTYPE rules and site triggers are not official USDA policy or official USGS flood stages.",
+          "Only configured flood exposure is evaluated; an OPEN recommendation is not a general safety finding.",
+          "NWS point filtering establishes alert applicability to configured coordinates, not observed inundation.",
+          "Gauge stage and endpoint trend support configured exposure assumptions; they do not prove flooding.",
+          "Discharge is retained as a reference when supplied but does not select posture in prototype-flood-v1.",
+          "Every recommendation requires explicit human approval; this engine changes no facility status.",
+          "SIMULATED DEMO: synthetic configuration or evidence is present; this is not a live facility decision."
+        ],
+        "human_approval_required": true
+      },
+      "source_timestamps": [
+        {
+          "reference_id": "facility",
+          "source": "FACILITY",
+          "source_reference": "demo:jefferson-research/facility",
+          "state": "SIMULATED DEMO",
+          "observed_at": "2026-10-10T18:00:00Z",
+          "retrieved_at": null,
+          "valid_from": null,
+          "valid_until": null
+        },
+        {
+          "reference_id": "exposure",
+          "source": "EXPOSURE",
+          "source_reference": "demo:jefferson-research/invented-exposure",
+          "state": "SIMULATED DEMO",
+          "observed_at": "2026-10-10T18:00:00Z",
+          "retrieved_at": null,
+          "valid_from": null,
+          "valid_until": null
+        },
+        {
+          "reference_id": "nws",
+          "source": "NWS",
+          "source_reference": "demo:nws-point-collection",
+          "state": "SIMULATED DEMO",
+          "observed_at": null,
+          "retrieved_at": "2026-10-10T18:00:00Z",
+          "valid_from": null,
+          "valid_until": null
+        },
+        {
+          "reference_id": "nws:alert:0",
+          "source": "NWS",
+          "source_reference": "demo:nws-severe-warning",
+          "state": "SIMULATED DEMO",
+          "observed_at": null,
+          "retrieved_at": "2026-10-10T18:00:00Z",
+          "valid_from": "2026-10-10T17:30:00Z",
+          "valid_until": "2026-10-10T20:00:00Z"
+        },
+        {
+          "reference_id": "usgs:observation:0",
+          "source": "USGS",
+          "source_reference": "demo:usgs-height",
+          "state": "SIMULATED DEMO",
+          "observed_at": "2026-10-10T18:00:00Z",
+          "retrieved_at": "2026-10-10T18:00:00Z",
+          "valid_from": null,
+          "valid_until": null
+        },
+        {
+          "reference_id": "usgs:trend",
+          "source": "USGS",
+          "source_reference": "demo:usgs-trend",
+          "state": "SIMULATED DEMO",
+          "observed_at": "2026-10-10T18:00:00Z",
+          "retrieved_at": "2026-10-10T18:00:00Z",
+          "valid_from": "2026-10-10T16:00:00Z",
+          "valid_until": "2026-10-10T18:00:00Z"
+        }
+      ],
+      "source_checks": [],
+      "integration_limitations": [
+        "SIMULATED DEMO: fixed fixture clock and invented exposure, gauge and triggers."
+      ]
+    }
+  },
+  "notification_plan": {
+    "notification_plan_id": "notification_bd67b358ef914b9eb7a7e2005b48fa84",
+    "decision_id": "decision_6be0970186ec4f238ac713bc18be3e6c",
+    "facility_id": "jefferson-research",
+    "facility_name": "Jefferson Research Facility",
+    "final_posture": "FACILITY_CLOSURE",
+    "effective_at": null,
+    "group_counts": {
+      "ESSENTIAL_PERSONNEL": 6,
+      "TELEWORK_ELIGIBLE": 31,
+      "STANDARD_ONSITE": 10
+    },
+    "total_assigned": 54,
+    "total_scheduled": 47,
+    "total_unscheduled": 7,
+    "total_affected": 47,
+    "messages": [
+      {
+        "group": "ESSENTIAL_PERSONNEL",
+        "count": 6,
+        "message": "SIMULATED DEMO | Facility: Jefferson Research Facility | Final operating posture: FACILITY_CLOSURE | Effective time: not recorded | Employee group: ESSENTIAL_PERSONNEL | Instruction: Contact authorized management to confirm your assignment and access authorization before any travel or facility entry. Essential designation alone does not authorize entry. | Decision reference: decision_6be0970186ec4f238ac713bc18be3e6c",
+        "route": "simulated",
+        "status": "GENERATED_SIMULATED"
+      },
+      {
+        "group": "TELEWORK_ELIGIBLE",
+        "count": 31,
+        "message": "SIMULATED DEMO | Facility: Jefferson Research Facility | Final operating posture: FACILITY_CLOSURE | Effective time: not recorded | Employee group: TELEWORK_ELIGIBLE | Instruction: Do not report to or enter the facility. Await authorized management instructions for work assignments. | Decision reference: decision_6be0970186ec4f238ac713bc18be3e6c",
+        "route": "simulated",
+        "status": "GENERATED_SIMULATED"
+      },
+      {
+        "group": "STANDARD_ONSITE",
+        "count": 10,
+        "message": "SIMULATED DEMO | Facility: Jefferson Research Facility | Final operating posture: FACILITY_CLOSURE | Effective time: not recorded | Employee group: STANDARD_ONSITE | Instruction: Do not report to or enter the facility. Await authorized management instructions for work assignments. | Decision reference: decision_6be0970186ec4f238ac713bc18be3e6c",
+        "route": "simulated",
+        "status": "GENERATED_SIMULATED"
+      }
+    ],
+    "roster_source": "ClosureOps synthetic demonstration shift fixture",
+    "roster_source_timestamp": "2026-10-10T18:00:00Z",
+    "template_version": "task8b-v1",
+    "status": "GENERATED_SIMULATED",
+    "created_at": "2026-10-11T04:02:22.211942Z",
+    "data_mode": "SIMULATED DEMO"
+  },
+  "audit": [
+    {
+      "decision_id": "decision_6be0970186ec4f238ac713bc18be3e6c",
+      "evaluation_id": "eval_e28cab8108be4740a8d4aa44bdf1b542",
+      "facility_id": "jefferson-research",
+      "evaluation_status": "RECOMMENDATION_READY",
+      "original_recommendation": "FACILITY_CLOSURE",
+      "manager_action": "APPROVE",
+      "final_posture": "FACILITY_CLOSURE",
+      "override_reason": null,
+      "manager": {
+        "id": "demo-manager",
+        "display_name": "Synthetic Demo Manager",
+        "synthetic": true
+      },
+      "evidence_snapshot": {
+        "facility": {
+          "id": "jefferson-research",
+          "name": "Jefferson Research Facility",
+          "latitude": 38.9517,
+          "longitude": -92.3341,
+          "data_source": "SIMULATED DEMO",
+          "source_timestamp": "2026-10-10T18:00:00Z",
+          "source_reference": "demo:jefferson-research/facility"
+        },
+        "nws": {
+          "facility_id": "jefferson-research",
+          "source": "NWS",
+          "source_reference": "demo:nws-point-collection",
+          "evidence_status": "SIMULATED DEMO",
+          "collection_status": "ACTIVE_ALERTS",
+          "retrieved_at": "2026-10-10T18:00:00Z",
+          "geographic_scope": "FACILITY_POINT_FILTERED",
+          "query_latitude": 38.9517,
+          "query_longitude": -92.3341,
+          "alerts": [
+            {
+              "alert_id": "demo:nws-severe-warning",
+              "event": "Flash Flood Warning",
+              "severity": "Severe",
+              "urgency": "Immediate",
+              "certainty": "Observed",
+              "effective": "2026-10-10T17:30:00Z",
+              "expires": "2026-10-10T20:00:00Z"
+            }
+          ]
+        },
+        "usgs": {
+          "facility_id": "jefferson-research",
+          "source": "USGS",
+          "observations": [
+            {
+              "monitoring_location_id": "USGS-00000000",
+              "time_series_id": "demo-height",
+              "parameter_code": "00065",
+              "value": 7.0,
+              "unit": "ft",
+              "observation_timestamp": "2026-10-10T18:00:00Z",
+              "retrieved_at": "2026-10-10T18:00:00Z",
+              "evidence_status": "SIMULATED DEMO",
+              "source_reference": "demo:usgs-height",
+              "approval_status": "Provisional"
+            }
+          ],
+          "trend": {
+            "monitoring_location_id": "USGS-00000000",
+            "time_series_id": "demo-height",
+            "start_value_feet": 5.0,
+            "end_value_feet": 7.0,
+            "start_timestamp": "2026-10-10T16:00:00Z",
+            "end_timestamp": "2026-10-10T18:00:00Z",
+            "retrieved_at": "2026-10-10T18:00:00Z",
+            "evidence_status": "SIMULATED DEMO",
+            "source_reference": "demo:usgs-trend"
+          }
+        },
+        "exposure": {
+          "facility_id": "jefferson-research",
+          "monitoring_location_id": "USGS-00000000",
+          "relationship": "ACCESS_ROUTE",
+          "basis": "SIMULATED DEMO only: invented Jefferson access-route exposure and gauge; not the configured regional USGS association.",
+          "source_reference": "demo:jefferson-research/invented-exposure",
+          "source_timestamp": "2026-10-10T18:00:00Z",
+          "data_source": "SIMULATED DEMO",
+          "thresholds": {
+            "delayed_arrival_feet": 4.0,
+            "telework_feet": 6.0,
+            "closure_feet": 8.0
+          }
+        },
+        "rules": {
+          "version": "prototype-flood-v1",
+          "policy_label": "PROTOTYPE - NOT OFFICIAL USDA POLICY",
+          "nws_max_age_minutes": 15,
+          "usgs_max_age_minutes": 120,
+          "rising_change_feet": 1.0
+        },
+        "evaluated_at": "2026-10-10T18:00:00Z"
+      },
+      "source_timestamps": [
+        {
+          "reference_id": "facility",
+          "source": "FACILITY",
+          "source_reference": "demo:jefferson-research/facility",
+          "state": "SIMULATED DEMO",
+          "observed_at": "2026-10-10T18:00:00Z",
+          "retrieved_at": null,
+          "valid_from": null,
+          "valid_until": null
+        },
+        {
+          "reference_id": "exposure",
+          "source": "EXPOSURE",
+          "source_reference": "demo:jefferson-research/invented-exposure",
+          "state": "SIMULATED DEMO",
+          "observed_at": "2026-10-10T18:00:00Z",
+          "retrieved_at": null,
+          "valid_from": null,
+          "valid_until": null
+        },
+        {
+          "reference_id": "nws",
+          "source": "NWS",
+          "source_reference": "demo:nws-point-collection",
+          "state": "SIMULATED DEMO",
+          "observed_at": null,
+          "retrieved_at": "2026-10-10T18:00:00Z",
+          "valid_from": null,
+          "valid_until": null
+        },
+        {
+          "reference_id": "nws:alert:0",
+          "source": "NWS",
+          "source_reference": "demo:nws-severe-warning",
+          "state": "SIMULATED DEMO",
+          "observed_at": null,
+          "retrieved_at": "2026-10-10T18:00:00Z",
+          "valid_from": "2026-10-10T17:30:00Z",
+          "valid_until": "2026-10-10T20:00:00Z"
+        },
+        {
+          "reference_id": "usgs:observation:0",
+          "source": "USGS",
+          "source_reference": "demo:usgs-height",
+          "state": "SIMULATED DEMO",
+          "observed_at": "2026-10-10T18:00:00Z",
+          "retrieved_at": "2026-10-10T18:00:00Z",
+          "valid_from": null,
+          "valid_until": null
+        },
+        {
+          "reference_id": "usgs:trend",
+          "source": "USGS",
+          "source_reference": "demo:usgs-trend",
+          "state": "SIMULATED DEMO",
+          "observed_at": "2026-10-10T18:00:00Z",
+          "retrieved_at": "2026-10-10T18:00:00Z",
+          "valid_from": "2026-10-10T16:00:00Z",
+          "valid_until": "2026-10-10T18:00:00Z"
+        }
+      ],
+      "data_mode": "SIMULATED DEMO",
+      "decision_timestamp": "2026-10-11T04:02:22.175549Z",
+      "evaluation": {
+        "evaluation_id": "eval_e28cab8108be4740a8d4aa44bdf1b542",
+        "data_mode": "SIMULATED DEMO",
+        "evidence_snapshot": {
+          "facility": {
+            "id": "jefferson-research",
+            "name": "Jefferson Research Facility",
+            "latitude": 38.9517,
+            "longitude": -92.3341,
+            "data_source": "SIMULATED DEMO",
+            "source_timestamp": "2026-10-10T18:00:00Z",
+            "source_reference": "demo:jefferson-research/facility"
+          },
+          "nws": {
+            "facility_id": "jefferson-research",
+            "source": "NWS",
+            "source_reference": "demo:nws-point-collection",
+            "evidence_status": "SIMULATED DEMO",
+            "collection_status": "ACTIVE_ALERTS",
+            "retrieved_at": "2026-10-10T18:00:00Z",
+            "geographic_scope": "FACILITY_POINT_FILTERED",
+            "query_latitude": 38.9517,
+            "query_longitude": -92.3341,
+            "alerts": [
+              {
+                "alert_id": "demo:nws-severe-warning",
+                "event": "Flash Flood Warning",
+                "severity": "Severe",
+                "urgency": "Immediate",
+                "certainty": "Observed",
+                "effective": "2026-10-10T17:30:00Z",
+                "expires": "2026-10-10T20:00:00Z"
+              }
+            ]
+          },
+          "usgs": {
+            "facility_id": "jefferson-research",
+            "source": "USGS",
+            "observations": [
+              {
+                "monitoring_location_id": "USGS-00000000",
+                "time_series_id": "demo-height",
+                "parameter_code": "00065",
+                "value": 7.0,
+                "unit": "ft",
+                "observation_timestamp": "2026-10-10T18:00:00Z",
+                "retrieved_at": "2026-10-10T18:00:00Z",
+                "evidence_status": "SIMULATED DEMO",
+                "source_reference": "demo:usgs-height",
+                "approval_status": "Provisional"
+              }
+            ],
+            "trend": {
+              "monitoring_location_id": "USGS-00000000",
+              "time_series_id": "demo-height",
+              "start_value_feet": 5.0,
+              "end_value_feet": 7.0,
+              "start_timestamp": "2026-10-10T16:00:00Z",
+              "end_timestamp": "2026-10-10T18:00:00Z",
+              "retrieved_at": "2026-10-10T18:00:00Z",
+              "evidence_status": "SIMULATED DEMO",
+              "source_reference": "demo:usgs-trend"
+            }
+          },
+          "exposure": {
+            "facility_id": "jefferson-research",
+            "monitoring_location_id": "USGS-00000000",
+            "relationship": "ACCESS_ROUTE",
+            "basis": "SIMULATED DEMO only: invented Jefferson access-route exposure and gauge; not the configured regional USGS association.",
+            "source_reference": "demo:jefferson-research/invented-exposure",
+            "source_timestamp": "2026-10-10T18:00:00Z",
+            "data_source": "SIMULATED DEMO",
+            "thresholds": {
+              "delayed_arrival_feet": 4.0,
+              "telework_feet": 6.0,
+              "closure_feet": 8.0
+            }
+          },
+          "rules": {
+            "version": "prototype-flood-v1",
+            "policy_label": "PROTOTYPE - NOT OFFICIAL USDA POLICY",
+            "nws_max_age_minutes": 15,
+            "usgs_max_age_minutes": 120,
+            "rising_change_feet": 1.0
+          },
+          "evaluated_at": "2026-10-10T18:00:00Z"
+        },
+        "result": {
+          "facility_id": "jefferson-research",
+          "recommendation": "FACILITY_CLOSURE",
+          "evaluation_status": "RECOMMENDATION_READY",
+          "evidence_sufficiency": "SUFFICIENT",
+          "data_label": "SIMULATED DEMO",
+          "evaluated_at": "2026-10-10T18:00:00Z",
+          "rules": {
+            "version": "prototype-flood-v1",
+            "policy_label": "PROTOTYPE - NOT OFFICIAL USDA POLICY",
+            "nws_max_age_minutes": 15,
+            "usgs_max_age_minutes": 120,
+            "rising_change_feet": 1.0
+          },
+          "thresholds": {
+            "delayed_arrival_feet": 4.0,
+            "telework_feet": 6.0,
+            "closure_feet": 8.0
+          },
+          "triggered_rules": [
+            {
+              "rule_id": "PROTOTYPE_CLOSURE_WARNING_AND_STAGE",
+              "reason": "Applicable severe flood warning plus associated gage height 7 ft at/above the prototype telework trigger 6 ft supports conservative closure.",
+              "evidence_reference_ids": [
+                "nws:alert:0",
+                "exposure",
+                "usgs:observation:0",
+                "usgs:trend"
+              ]
+            }
+          ],
+          "evidence_references": [
+            {
+              "reference_id": "facility",
+              "source": "FACILITY",
+              "source_reference": "demo:jefferson-research/facility",
+              "state": "SIMULATED DEMO",
+              "observed_at": "2026-10-10T18:00:00Z",
+              "retrieved_at": null,
+              "valid_from": null,
+              "valid_until": null
+            },
+            {
+              "reference_id": "exposure",
+              "source": "EXPOSURE",
+              "source_reference": "demo:jefferson-research/invented-exposure",
+              "state": "SIMULATED DEMO",
+              "observed_at": "2026-10-10T18:00:00Z",
+              "retrieved_at": null,
+              "valid_from": null,
+              "valid_until": null
+            },
+            {
+              "reference_id": "nws",
+              "source": "NWS",
+              "source_reference": "demo:nws-point-collection",
+              "state": "SIMULATED DEMO",
+              "observed_at": null,
+              "retrieved_at": "2026-10-10T18:00:00Z",
+              "valid_from": null,
+              "valid_until": null
+            },
+            {
+              "reference_id": "nws:alert:0",
+              "source": "NWS",
+              "source_reference": "demo:nws-severe-warning",
+              "state": "SIMULATED DEMO",
+              "observed_at": null,
+              "retrieved_at": "2026-10-10T18:00:00Z",
+              "valid_from": "2026-10-10T17:30:00Z",
+              "valid_until": "2026-10-10T20:00:00Z"
+            },
+            {
+              "reference_id": "usgs:observation:0",
+              "source": "USGS",
+              "source_reference": "demo:usgs-height",
+              "state": "SIMULATED DEMO",
+              "observed_at": "2026-10-10T18:00:00Z",
+              "retrieved_at": "2026-10-10T18:00:00Z",
+              "valid_from": null,
+              "valid_until": null
+            },
+            {
+              "reference_id": "usgs:trend",
+              "source": "USGS",
+              "source_reference": "demo:usgs-trend",
+              "state": "SIMULATED DEMO",
+              "observed_at": "2026-10-10T18:00:00Z",
+              "retrieved_at": "2026-10-10T18:00:00Z",
+              "valid_from": "2026-10-10T16:00:00Z",
+              "valid_until": "2026-10-10T18:00:00Z"
+            }
+          ],
+          "reasons": [
+            "Applicable severe flood warning plus associated gage height 7 ft at/above the prototype telework trigger 6 ft supports conservative closure."
+          ],
+          "limitations": [
+            "PROTOTYPE rules and site triggers are not official USDA policy or official USGS flood stages.",
+            "Only configured flood exposure is evaluated; an OPEN recommendation is not a general safety finding.",
+            "NWS point filtering establishes alert applicability to configured coordinates, not observed inundation.",
+            "Gauge stage and endpoint trend support configured exposure assumptions; they do not prove flooding.",
+            "Discharge is retained as a reference when supplied but does not select posture in prototype-flood-v1.",
+            "Every recommendation requires explicit human approval; this engine changes no facility status.",
+            "SIMULATED DEMO: synthetic configuration or evidence is present; this is not a live facility decision."
+          ],
+          "human_approval_required": true
+        },
+        "source_timestamps": [
+          {
+            "reference_id": "facility",
+            "source": "FACILITY",
+            "source_reference": "demo:jefferson-research/facility",
+            "state": "SIMULATED DEMO",
+            "observed_at": "2026-10-10T18:00:00Z",
+            "retrieved_at": null,
+            "valid_from": null,
+            "valid_until": null
+          },
+          {
+            "reference_id": "exposure",
+            "source": "EXPOSURE",
+            "source_reference": "demo:jefferson-research/invented-exposure",
+            "state": "SIMULATED DEMO",
+            "observed_at": "2026-10-10T18:00:00Z",
+            "retrieved_at": null,
+            "valid_from": null,
+            "valid_until": null
+          },
+          {
+            "reference_id": "nws",
+            "source": "NWS",
+            "source_reference": "demo:nws-point-collection",
+            "state": "SIMULATED DEMO",
+            "observed_at": null,
+            "retrieved_at": "2026-10-10T18:00:00Z",
+            "valid_from": null,
+            "valid_until": null
+          },
+          {
+            "reference_id": "nws:alert:0",
+            "source": "NWS",
+            "source_reference": "demo:nws-severe-warning",
+            "state": "SIMULATED DEMO",
+            "observed_at": null,
+            "retrieved_at": "2026-10-10T18:00:00Z",
+            "valid_from": "2026-10-10T17:30:00Z",
+            "valid_until": "2026-10-10T20:00:00Z"
+          },
+          {
+            "reference_id": "usgs:observation:0",
+            "source": "USGS",
+            "source_reference": "demo:usgs-height",
+            "state": "SIMULATED DEMO",
+            "observed_at": "2026-10-10T18:00:00Z",
+            "retrieved_at": "2026-10-10T18:00:00Z",
+            "valid_from": null,
+            "valid_until": null
+          },
+          {
+            "reference_id": "usgs:trend",
+            "source": "USGS",
+            "source_reference": "demo:usgs-trend",
+            "state": "SIMULATED DEMO",
+            "observed_at": "2026-10-10T18:00:00Z",
+            "retrieved_at": "2026-10-10T18:00:00Z",
+            "valid_from": "2026-10-10T16:00:00Z",
+            "valid_until": "2026-10-10T18:00:00Z"
+          }
+        ],
+        "source_checks": [],
+        "integration_limitations": [
+          "SIMULATED DEMO: fixed fixture clock and invented exposure, gauge and triggers."
+        ]
+      }
+    }
+  ]
+}

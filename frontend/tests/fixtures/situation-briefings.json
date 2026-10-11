@@ -1,0 +1,407 @@
+{
+  "normal": {
+    "evaluation_id": "eval_3a921104bb4e4d4e9d326669bdea8a48",
+    "facility_id": "jefferson-research",
+    "facility_name": "Jefferson Research Facility",
+    "data_mode": "SIMULATED DEMO",
+    "data_label": "SIMULATED DEMO",
+    "authoritative_recommendation": "OPEN",
+    "human_approval_required": true,
+    "generated_at": "2026-10-11T07:00:00Z",
+    "evaluated_at": "2026-10-10T18:00:00Z",
+    "status": "VALIDATED",
+    "validation_status": "VALIDATED",
+    "model_completed": true,
+    "tool_execution_confirmed": true,
+    "explanation_source": "VALIDATED_RULES",
+    "explanation": "Facility: jefferson-research | SIMULATED DEMO | SIMULATED DEMO\nRecommended posture: OPEN\nEvidence sufficiency: SUFFICIENT | evaluated 2026-10-10T18:00:00Z\nExplicit human approval required. No facility operating status was changed.\nPROTOTYPE_OPEN_SUPPORTED: Fresh applicable NWS collection has no active alerts; documented exposure, stage 2 ft below 4 ft, and endpoint change 0 ft below 1 ft support OPEN for this flood-only prototype.\nfacility | FACILITY | SIMULATED DEMO | demo:jefferson-research/facility | observed 2026-10-10T18:00:00Z | retrieved None | valid None through None\nexposure | EXPOSURE | SIMULATED DEMO | demo:jefferson-research/invented-exposure | observed 2026-10-10T18:00:00Z | retrieved None | valid None through None\nnws | NWS | SIMULATED DEMO | demo:nws-point-collection | observed None | retrieved 2026-10-10T18:00:00Z | valid None through None\nusgs:observation:0 | USGS | SIMULATED DEMO | demo:usgs-height | observed 2026-10-10T18:00:00Z | retrieved 2026-10-10T18:00:00Z | valid None through None\nusgs:trend | USGS | SIMULATED DEMO | demo:usgs-trend | observed 2026-10-10T18:00:00Z | retrieved 2026-10-10T18:00:00Z | valid 2026-10-10T16:00:00Z through 2026-10-10T18:00:00Z\nPROTOTYPE rules and site triggers are not official USDA policy or official USGS flood stages.\nOnly configured flood exposure is evaluated; an OPEN recommendation is not a general safety finding.\nNWS point filtering establishes alert applicability to configured coordinates, not observed inundation.\nGauge stage and endpoint trend support configured exposure assumptions; they do not prove flooding.\nDischarge is retained as a reference when supplied but does not select posture in prototype-flood-v1.\nEvery recommendation requires explicit human approval; this engine changes no facility status.\nSIMULATED DEMO: synthetic configuration or evidence is present; this is not a live facility decision.\nSIMULATED DEMO: fixed fixture clock and invented exposure, gauge and triggers.",
+    "situation_briefing": {
+      "situation_summary": "Saved SIMULATED DEMO evaluation for Jefferson Research Facility includes no active alerts in the saved NWS collection and a synthetic gauge height of 2 ft.",
+      "operational_implications": "This evaluation uses a synthetic access-route exposure assumption. The selected evidence does not confirm facility or access-route flooding.",
+      "recommended_response": "OPEN is the authoritative Python recommendation. Fresh applicable NWS collection has no active alerts; documented exposure, stage 2 ft below 4 ft, and endpoint change 0 ft below 1 ft support OPEN for this flood-only prototype.",
+      "suggested_next_steps": "Review the evidence and rule rationale, then explicitly approve or override the recommendation. An override requires a reason. Notification planning remains simulated and follows a finalized manager decision.",
+      "evidence_limitations": "SIMULATED DEMO: synthetic configuration or evidence; not current live facility conditions. Saved evidence has not been refreshed. Gauge readings do not prove flooding. Prototype rules are not official USDA policy."
+    },
+    "reason": "OK",
+    "evidence_references": [
+      {
+        "reference_id": "facility",
+        "source": "FACILITY",
+        "source_reference": "demo:jefferson-research/facility",
+        "state": "SIMULATED DEMO",
+        "observed_at": "2026-10-10T18:00:00Z",
+        "retrieved_at": null,
+        "valid_from": null,
+        "valid_until": null
+      },
+      {
+        "reference_id": "exposure",
+        "source": "EXPOSURE",
+        "source_reference": "demo:jefferson-research/invented-exposure",
+        "state": "SIMULATED DEMO",
+        "observed_at": "2026-10-10T18:00:00Z",
+        "retrieved_at": null,
+        "valid_from": null,
+        "valid_until": null
+      },
+      {
+        "reference_id": "nws",
+        "source": "NWS",
+        "source_reference": "demo:nws-point-collection",
+        "state": "SIMULATED DEMO",
+        "observed_at": null,
+        "retrieved_at": "2026-10-10T18:00:00Z",
+        "valid_from": null,
+        "valid_until": null
+      },
+      {
+        "reference_id": "usgs:observation:0",
+        "source": "USGS",
+        "source_reference": "demo:usgs-height",
+        "state": "SIMULATED DEMO",
+        "observed_at": "2026-10-10T18:00:00Z",
+        "retrieved_at": "2026-10-10T18:00:00Z",
+        "valid_from": null,
+        "valid_until": null
+      },
+      {
+        "reference_id": "usgs:trend",
+        "source": "USGS",
+        "source_reference": "demo:usgs-trend",
+        "state": "SIMULATED DEMO",
+        "observed_at": "2026-10-10T18:00:00Z",
+        "retrieved_at": "2026-10-10T18:00:00Z",
+        "valid_from": "2026-10-10T16:00:00Z",
+        "valid_until": "2026-10-10T18:00:00Z"
+      }
+    ]
+  },
+  "severe_applicable_flood": {
+    "evaluation_id": "eval_e28cab8108be4740a8d4aa44bdf1b542",
+    "facility_id": "jefferson-research",
+    "facility_name": "Jefferson Research Facility",
+    "data_mode": "SIMULATED DEMO",
+    "data_label": "SIMULATED DEMO",
+    "authoritative_recommendation": "FACILITY_CLOSURE",
+    "human_approval_required": true,
+    "generated_at": "2026-10-11T07:00:00Z",
+    "evaluated_at": "2026-10-10T18:00:00Z",
+    "status": "VALIDATED",
+    "validation_status": "VALIDATED",
+    "model_completed": true,
+    "tool_execution_confirmed": true,
+    "explanation_source": "VALIDATED_RULES",
+    "explanation": "Facility: jefferson-research | SIMULATED DEMO | SIMULATED DEMO\nRecommended posture: FACILITY_CLOSURE\nEvidence sufficiency: SUFFICIENT | evaluated 2026-10-10T18:00:00Z\nExplicit human approval required. No facility operating status was changed.\nPROTOTYPE_CLOSURE_WARNING_AND_STAGE: Applicable severe flood warning plus associated gage height 7 ft at/above the prototype telework trigger 6 ft supports conservative closure.\nfacility | FACILITY | SIMULATED DEMO | demo:jefferson-research/facility | observed 2026-10-10T18:00:00Z | retrieved None | valid None through None\nexposure | EXPOSURE | SIMULATED DEMO | demo:jefferson-research/invented-exposure | observed 2026-10-10T18:00:00Z | retrieved None | valid None through None\nnws | NWS | SIMULATED DEMO | demo:nws-point-collection | observed None | retrieved 2026-10-10T18:00:00Z | valid None through None\nnws:alert:0 | NWS | SIMULATED DEMO | demo:nws-severe-warning | observed None | retrieved 2026-10-10T18:00:00Z | valid 2026-10-10T17:30:00Z through 2026-10-10T20:00:00Z\nusgs:observation:0 | USGS | SIMULATED DEMO | demo:usgs-height | observed 2026-10-10T18:00:00Z | retrieved 2026-10-10T18:00:00Z | valid None through None\nusgs:trend | USGS | SIMULATED DEMO | demo:usgs-trend | observed 2026-10-10T18:00:00Z | retrieved 2026-10-10T18:00:00Z | valid 2026-10-10T16:00:00Z through 2026-10-10T18:00:00Z\nPROTOTYPE rules and site triggers are not official USDA policy or official USGS flood stages.\nOnly configured flood exposure is evaluated; an OPEN recommendation is not a general safety finding.\nNWS point filtering establishes alert applicability to configured coordinates, not observed inundation.\nGauge stage and endpoint trend support configured exposure assumptions; they do not prove flooding.\nDischarge is retained as a reference when supplied but does not select posture in prototype-flood-v1.\nEvery recommendation requires explicit human approval; this engine changes no facility status.\nSIMULATED DEMO: synthetic configuration or evidence is present; this is not a live facility decision.\nSIMULATED DEMO: fixed fixture clock and invented exposure, gauge and triggers.",
+    "situation_briefing": {
+      "situation_summary": "Saved SIMULATED DEMO evaluation for Jefferson Research Facility includes a Severe Flash Flood Warning and a synthetic gauge height of 7 ft.",
+      "operational_implications": "This evaluation uses a synthetic access-route exposure assumption. The selected evidence does not confirm facility or access-route flooding.",
+      "recommended_response": "FACILITY_CLOSURE is the authoritative Python recommendation. The synthetic 7 ft gauge exceeds the 6 ft prototype telework threshold. Combined with the applicable severe warning, this supports conservative closure. The standalone 8 ft closure threshold was not crossed.",
+      "suggested_next_steps": "Review the evidence and rule rationale, then explicitly approve or override the recommendation. An override requires a reason. Notification planning remains simulated and follows a finalized manager decision.",
+      "evidence_limitations": "SIMULATED DEMO: synthetic configuration or evidence; not current live facility conditions. Saved evidence has not been refreshed. Gauge readings do not prove flooding. Prototype rules are not official USDA policy."
+    },
+    "reason": "OK",
+    "evidence_references": [
+      {
+        "reference_id": "facility",
+        "source": "FACILITY",
+        "source_reference": "demo:jefferson-research/facility",
+        "state": "SIMULATED DEMO",
+        "observed_at": "2026-10-10T18:00:00Z",
+        "retrieved_at": null,
+        "valid_from": null,
+        "valid_until": null
+      },
+      {
+        "reference_id": "exposure",
+        "source": "EXPOSURE",
+        "source_reference": "demo:jefferson-research/invented-exposure",
+        "state": "SIMULATED DEMO",
+        "observed_at": "2026-10-10T18:00:00Z",
+        "retrieved_at": null,
+        "valid_from": null,
+        "valid_until": null
+      },
+      {
+        "reference_id": "nws",
+        "source": "NWS",
+        "source_reference": "demo:nws-point-collection",
+        "state": "SIMULATED DEMO",
+        "observed_at": null,
+        "retrieved_at": "2026-10-10T18:00:00Z",
+        "valid_from": null,
+        "valid_until": null
+      },
+      {
+        "reference_id": "nws:alert:0",
+        "source": "NWS",
+        "source_reference": "demo:nws-severe-warning",
+        "state": "SIMULATED DEMO",
+        "observed_at": null,
+        "retrieved_at": "2026-10-10T18:00:00Z",
+        "valid_from": "2026-10-10T17:30:00Z",
+        "valid_until": "2026-10-10T20:00:00Z"
+      },
+      {
+        "reference_id": "usgs:observation:0",
+        "source": "USGS",
+        "source_reference": "demo:usgs-height",
+        "state": "SIMULATED DEMO",
+        "observed_at": "2026-10-10T18:00:00Z",
+        "retrieved_at": "2026-10-10T18:00:00Z",
+        "valid_from": null,
+        "valid_until": null
+      },
+      {
+        "reference_id": "usgs:trend",
+        "source": "USGS",
+        "source_reference": "demo:usgs-trend",
+        "state": "SIMULATED DEMO",
+        "observed_at": "2026-10-10T18:00:00Z",
+        "retrieved_at": "2026-10-10T18:00:00Z",
+        "valid_from": "2026-10-10T16:00:00Z",
+        "valid_until": "2026-10-10T18:00:00Z"
+      }
+    ]
+  },
+  "missing_evidence": {
+    "evaluation_id": "eval_bf9ee1ec93c74227b7a2bc65ce89e0b8",
+    "facility_id": "jefferson-research",
+    "facility_name": "Jefferson Research Facility",
+    "data_mode": "SIMULATED DEMO",
+    "data_label": "SIMULATED DEMO",
+    "authoritative_recommendation": null,
+    "human_approval_required": true,
+    "generated_at": "2026-10-11T07:00:00Z",
+    "evaluated_at": "2026-10-10T18:00:00Z",
+    "status": "VALIDATED",
+    "validation_status": "VALIDATED",
+    "model_completed": true,
+    "tool_execution_confirmed": true,
+    "explanation_source": "VALIDATED_RULES",
+    "explanation": "Facility: jefferson-research | SIMULATED DEMO | SIMULATED DEMO\nRecommended posture: REVIEW_REQUIRED (no recommended posture)\nEvidence sufficiency: INSUFFICIENT | evaluated 2026-10-10T18:00:00Z\nExplicit human approval required. No facility operating status was changed.\nREVIEW_USGS_MISSING: USGS evidence is missing.\nREVIEW_GAGE_MISSING_OR_AMBIGUOUS: Exactly one usable gage-height series is required.\nREVIEW_TREND_MISSING: A validated one-to-three-hour observed gage-height trend is required.\nfacility | FACILITY | SIMULATED DEMO | demo:jefferson-research/facility | observed 2026-10-10T18:00:00Z | retrieved None | valid None through None\nexposure | EXPOSURE | SIMULATED DEMO | demo:jefferson-research/invented-exposure | observed 2026-10-10T18:00:00Z | retrieved None | valid None through None\nnws | NWS | SIMULATED DEMO | demo:nws-point-collection | observed None | retrieved 2026-10-10T18:00:00Z | valid None through None\nusgs | USGS | UNAVAILABLE | input:usgs-missing | observed None | retrieved None | valid None through None\nusgs:trend | USGS | UNAVAILABLE | input:usgs-trend-missing | observed None | retrieved None | valid None through None\nPROTOTYPE rules and site triggers are not official USDA policy or official USGS flood stages.\nOnly configured flood exposure is evaluated; an OPEN recommendation is not a general safety finding.\nNWS point filtering establishes alert applicability to configured coordinates, not observed inundation.\nGauge stage and endpoint trend support configured exposure assumptions; they do not prove flooding.\nDischarge is retained as a reference when supplied but does not select posture in prototype-flood-v1.\nEvery recommendation requires explicit human approval; this engine changes no facility status.\nSIMULATED DEMO: synthetic configuration or evidence is present; this is not a live facility decision.\nSIMULATED DEMO: fixed fixture clock and invented exposure, gauge and triggers.",
+    "situation_briefing": {
+      "situation_summary": "Saved SIMULATED DEMO evaluation for Jefferson Research Facility requires manual evidence review.",
+      "operational_implications": "Evidence is insufficient. The Python engine has not selected an operating posture.",
+      "recommended_response": "REVIEW_REQUIRED; no recommended operating posture. USGS evidence is missing. Exactly one usable gage-height series is required. Additional review causes are available in technical diagnostics.",
+      "suggested_next_steps": "Review the evidence gaps and resolve the reported issues before evaluating again. A review acknowledgment does not authorize an operating change or a notification plan.",
+      "evidence_limitations": "SIMULATED DEMO: synthetic configuration or evidence; not current live facility conditions. Saved evidence has not been refreshed. Gauge readings do not prove flooding. Prototype rules are not official USDA policy."
+    },
+    "reason": "OK",
+    "evidence_references": [
+      {
+        "reference_id": "facility",
+        "source": "FACILITY",
+        "source_reference": "demo:jefferson-research/facility",
+        "state": "SIMULATED DEMO",
+        "observed_at": "2026-10-10T18:00:00Z",
+        "retrieved_at": null,
+        "valid_from": null,
+        "valid_until": null
+      },
+      {
+        "reference_id": "exposure",
+        "source": "EXPOSURE",
+        "source_reference": "demo:jefferson-research/invented-exposure",
+        "state": "SIMULATED DEMO",
+        "observed_at": "2026-10-10T18:00:00Z",
+        "retrieved_at": null,
+        "valid_from": null,
+        "valid_until": null
+      },
+      {
+        "reference_id": "nws",
+        "source": "NWS",
+        "source_reference": "demo:nws-point-collection",
+        "state": "SIMULATED DEMO",
+        "observed_at": null,
+        "retrieved_at": "2026-10-10T18:00:00Z",
+        "valid_from": null,
+        "valid_until": null
+      },
+      {
+        "reference_id": "usgs",
+        "source": "USGS",
+        "source_reference": "input:usgs-missing",
+        "state": "UNAVAILABLE",
+        "observed_at": null,
+        "retrieved_at": null,
+        "valid_from": null,
+        "valid_until": null
+      },
+      {
+        "reference_id": "usgs:trend",
+        "source": "USGS",
+        "source_reference": "input:usgs-trend-missing",
+        "state": "UNAVAILABLE",
+        "observed_at": null,
+        "retrieved_at": null,
+        "valid_from": null,
+        "valid_until": null
+      }
+    ]
+  },
+  "stale_evidence": {
+    "evaluation_id": "eval_0fccf54e52cc4adca0864e26c43a0f9f",
+    "facility_id": "jefferson-research",
+    "facility_name": "Jefferson Research Facility",
+    "data_mode": "SIMULATED DEMO",
+    "data_label": "SIMULATED DEMO",
+    "authoritative_recommendation": null,
+    "human_approval_required": true,
+    "generated_at": "2026-10-11T07:00:00Z",
+    "evaluated_at": "2026-10-10T21:00:00Z",
+    "status": "VALIDATED",
+    "validation_status": "VALIDATED",
+    "model_completed": true,
+    "tool_execution_confirmed": true,
+    "explanation_source": "VALIDATED_RULES",
+    "explanation": "Facility: jefferson-research | SIMULATED DEMO | SIMULATED DEMO\nRecommended posture: REVIEW_REQUIRED (no recommended posture)\nEvidence sufficiency: INSUFFICIENT | evaluated 2026-10-10T21:00:00Z\nExplicit human approval required. No facility operating status was changed.\nREVIEW_NWS_FRESHNESS: NWS evidence is unavailable, explicitly stale, future-dated, or older than the prototype retrieval window.\nREVIEW_GAGE_FRESHNESS: Gage height is unavailable, explicitly stale, future-dated, or older than the prototype observation window.\nREVIEW_TREND_FRESHNESS: The trend endpoint or retrieval is unavailable, stale, or future-dated.\nfacility | FACILITY | SIMULATED DEMO | demo:jefferson-research/facility | observed 2026-10-10T18:00:00Z | retrieved None | valid None through None\nexposure | EXPOSURE | SIMULATED DEMO | demo:jefferson-research/invented-exposure | observed 2026-10-10T18:00:00Z | retrieved None | valid None through None\nnws | NWS | SIMULATED DEMO | demo:nws-point-collection | observed None | retrieved 2026-10-10T18:00:00Z | valid None through None\nusgs:observation:0 | USGS | SIMULATED DEMO | demo:usgs-height | observed 2026-10-10T18:00:00Z | retrieved 2026-10-10T18:00:00Z | valid None through None\nusgs:trend | USGS | SIMULATED DEMO | demo:usgs-trend | observed 2026-10-10T18:00:00Z | retrieved 2026-10-10T18:00:00Z | valid 2026-10-10T16:00:00Z through 2026-10-10T18:00:00Z\nPROTOTYPE rules and site triggers are not official USDA policy or official USGS flood stages.\nOnly configured flood exposure is evaluated; an OPEN recommendation is not a general safety finding.\nNWS point filtering establishes alert applicability to configured coordinates, not observed inundation.\nGauge stage and endpoint trend support configured exposure assumptions; they do not prove flooding.\nDischarge is retained as a reference when supplied but does not select posture in prototype-flood-v1.\nEvery recommendation requires explicit human approval; this engine changes no facility status.\nSIMULATED DEMO: synthetic configuration or evidence is present; this is not a live facility decision.\nSIMULATED DEMO: fixed fixture clock and invented exposure, gauge and triggers.",
+    "situation_briefing": {
+      "situation_summary": "Saved SIMULATED DEMO evaluation for Jefferson Research Facility includes no active alerts in the saved NWS collection and a synthetic gauge height of 2 ft.",
+      "operational_implications": "Evidence is insufficient. The Python engine has not selected an operating posture.",
+      "recommended_response": "REVIEW_REQUIRED; no recommended operating posture. NWS evidence is unavailable, explicitly stale, future-dated, or older than the prototype retrieval window. Gage height is unavailable, explicitly stale, future-dated, or older than the prototype observation window. Additional review causes are available in technical diagnostics.",
+      "suggested_next_steps": "Review the evidence gaps and resolve the reported issues before evaluating again. A review acknowledgment does not authorize an operating change or a notification plan.",
+      "evidence_limitations": "SIMULATED DEMO: synthetic configuration or evidence; not current live facility conditions. Saved evidence has not been refreshed. Gauge readings do not prove flooding. Prototype rules are not official USDA policy."
+    },
+    "reason": "OK",
+    "evidence_references": [
+      {
+        "reference_id": "facility",
+        "source": "FACILITY",
+        "source_reference": "demo:jefferson-research/facility",
+        "state": "SIMULATED DEMO",
+        "observed_at": "2026-10-10T18:00:00Z",
+        "retrieved_at": null,
+        "valid_from": null,
+        "valid_until": null
+      },
+      {
+        "reference_id": "exposure",
+        "source": "EXPOSURE",
+        "source_reference": "demo:jefferson-research/invented-exposure",
+        "state": "SIMULATED DEMO",
+        "observed_at": "2026-10-10T18:00:00Z",
+        "retrieved_at": null,
+        "valid_from": null,
+        "valid_until": null
+      },
+      {
+        "reference_id": "nws",
+        "source": "NWS",
+        "source_reference": "demo:nws-point-collection",
+        "state": "SIMULATED DEMO",
+        "observed_at": null,
+        "retrieved_at": "2026-10-10T18:00:00Z",
+        "valid_from": null,
+        "valid_until": null
+      },
+      {
+        "reference_id": "usgs:observation:0",
+        "source": "USGS",
+        "source_reference": "demo:usgs-height",
+        "state": "SIMULATED DEMO",
+        "observed_at": "2026-10-10T18:00:00Z",
+        "retrieved_at": "2026-10-10T18:00:00Z",
+        "valid_from": null,
+        "valid_until": null
+      },
+      {
+        "reference_id": "usgs:trend",
+        "source": "USGS",
+        "source_reference": "demo:usgs-trend",
+        "state": "SIMULATED DEMO",
+        "observed_at": "2026-10-10T18:00:00Z",
+        "retrieved_at": "2026-10-10T18:00:00Z",
+        "valid_from": "2026-10-10T16:00:00Z",
+        "valid_until": "2026-10-10T18:00:00Z"
+      }
+    ]
+  },
+  "conflicting_evidence": {
+    "evaluation_id": "eval_5730d007540f4377b244325cbad46094",
+    "facility_id": "jefferson-research",
+    "facility_name": "Jefferson Research Facility",
+    "data_mode": "SIMULATED DEMO",
+    "data_label": "SIMULATED DEMO",
+    "authoritative_recommendation": null,
+    "human_approval_required": true,
+    "generated_at": "2026-10-11T07:00:00Z",
+    "evaluated_at": "2026-10-10T18:00:00Z",
+    "status": "VALIDATED",
+    "validation_status": "VALIDATED",
+    "model_completed": true,
+    "tool_execution_confirmed": true,
+    "explanation_source": "VALIDATED_RULES",
+    "explanation": "Facility: jefferson-research | SIMULATED DEMO | SIMULATED DEMO\nRecommended posture: REVIEW_REQUIRED (no recommended posture)\nEvidence sufficiency: CONFLICTING | evaluated 2026-10-10T18:00:00Z\nExplicit human approval required. No facility operating status was changed.\nREVIEW_CONFLICTING_SIGNALS: An applicable severe flood warning conflicts with a below-trigger, non-rising associated gage; neither signal is discarded.\nfacility | FACILITY | SIMULATED DEMO | demo:jefferson-research/facility | observed 2026-10-10T18:00:00Z | retrieved None | valid None through None\nexposure | EXPOSURE | SIMULATED DEMO | demo:jefferson-research/invented-exposure | observed 2026-10-10T18:00:00Z | retrieved None | valid None through None\nnws | NWS | SIMULATED DEMO | demo:nws-point-collection | observed None | retrieved 2026-10-10T18:00:00Z | valid None through None\nnws:alert:0 | NWS | SIMULATED DEMO | demo:nws-severe-warning | observed None | retrieved 2026-10-10T18:00:00Z | valid 2026-10-10T17:30:00Z through 2026-10-10T20:00:00Z\nusgs:observation:0 | USGS | SIMULATED DEMO | demo:usgs-height | observed 2026-10-10T18:00:00Z | retrieved 2026-10-10T18:00:00Z | valid None through None\nusgs:trend | USGS | SIMULATED DEMO | demo:usgs-trend | observed 2026-10-10T18:00:00Z | retrieved 2026-10-10T18:00:00Z | valid 2026-10-10T16:00:00Z through 2026-10-10T18:00:00Z\nPROTOTYPE rules and site triggers are not official USDA policy or official USGS flood stages.\nOnly configured flood exposure is evaluated; an OPEN recommendation is not a general safety finding.\nNWS point filtering establishes alert applicability to configured coordinates, not observed inundation.\nGauge stage and endpoint trend support configured exposure assumptions; they do not prove flooding.\nDischarge is retained as a reference when supplied but does not select posture in prototype-flood-v1.\nEvery recommendation requires explicit human approval; this engine changes no facility status.\nSIMULATED DEMO: synthetic configuration or evidence is present; this is not a live facility decision.\nSIMULATED DEMO: fixed fixture clock and invented exposure, gauge and triggers.",
+    "situation_briefing": {
+      "situation_summary": "Saved SIMULATED DEMO evaluation for Jefferson Research Facility includes a Severe Flash Flood Warning and a synthetic gauge height of 2 ft.",
+      "operational_implications": "Evidence is conflicting. The Python engine has not selected an operating posture.",
+      "recommended_response": "REVIEW_REQUIRED; no recommended operating posture. An applicable severe flood warning conflicts with a below-trigger, non-rising associated gage; neither signal is discarded.",
+      "suggested_next_steps": "Review the evidence gaps and resolve the reported issues before evaluating again. A review acknowledgment does not authorize an operating change or a notification plan.",
+      "evidence_limitations": "SIMULATED DEMO: synthetic configuration or evidence; not current live facility conditions. Saved evidence has not been refreshed. Gauge readings do not prove flooding. Prototype rules are not official USDA policy."
+    },
+    "reason": "OK",
+    "evidence_references": [
+      {
+        "reference_id": "facility",
+        "source": "FACILITY",
+        "source_reference": "demo:jefferson-research/facility",
+        "state": "SIMULATED DEMO",
+        "observed_at": "2026-10-10T18:00:00Z",
+        "retrieved_at": null,
+        "valid_from": null,
+        "valid_until": null
+      },
+      {
+        "reference_id": "exposure",
+        "source": "EXPOSURE",
+        "source_reference": "demo:jefferson-research/invented-exposure",
+        "state": "SIMULATED DEMO",
+        "observed_at": "2026-10-10T18:00:00Z",
+        "retrieved_at": null,
+        "valid_from": null,
+        "valid_until": null
+      },
+      {
+        "reference_id": "nws",
+        "source": "NWS",
+        "source_reference": "demo:nws-point-collection",
+        "state": "SIMULATED DEMO",
+        "observed_at": null,
+        "retrieved_at": "2026-10-10T18:00:00Z",
+        "valid_from": null,
+        "valid_until": null
+      },
+      {
+        "reference_id": "nws:alert:0",
+        "source": "NWS",
+        "source_reference": "demo:nws-severe-warning",
+        "state": "SIMULATED DEMO",
+        "observed_at": null,
+        "retrieved_at": "2026-10-10T18:00:00Z",
+        "valid_from": "2026-10-10T17:30:00Z",
+        "valid_until": "2026-10-10T20:00:00Z"
+      },
+      {
+        "reference_id": "usgs:observation:0",
+        "source": "USGS",
+        "source_reference": "demo:usgs-height",
+        "state": "SIMULATED DEMO",
+        "observed_at": "2026-10-10T18:00:00Z",
+        "retrieved_at": "2026-10-10T18:00:00Z",
+        "valid_from": null,
+        "valid_until": null
+      },
+      {
+        "reference_id": "usgs:trend",
+        "source": "USGS",
+        "source_reference": "demo:usgs-trend",
+        "state": "SIMULATED DEMO",
+        "observed_at": "2026-10-10T18:00:00Z",
+        "retrieved_at": "2026-10-10T18:00:00Z",
+        "valid_from": "2026-10-10T16:00:00Z",
+        "valid_until": "2026-10-10T18:00:00Z"
+      }
+    ]
+  }
+}
